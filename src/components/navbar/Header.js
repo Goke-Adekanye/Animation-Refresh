@@ -1,8 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { withRouter, Link } from "react-router-dom";
+import { staggerHeader } from "./Animations";
 import Hamburger from "./Hamburger";
 
 const Header = ({ history }) => {
+  // Create varibles of our dom nodes
+  let logo = useRef(null);
+  let menu = useRef(null);
+
   // State of our Menu
   const [state, setState] = useState({
     initial: false,
@@ -20,6 +25,11 @@ const Header = ({ history }) => {
       setState({ clicked: false, menuName: "Menu" });
     });
   }, [history]);
+
+  useEffect(() => {
+    //stagger header content
+    staggerHeader(logo, menu);
+  }, []);
 
   // Toggle menu
   const handleMenu = () => {
@@ -56,10 +66,10 @@ const Header = ({ history }) => {
       <div className="container">
         <div className="wrapper">
           <div className="inner-header">
-            <div className="logo">
+            <div ref={(el) => (logo = el)} className="logo">
               <Link to="/">HAMBRG.</Link>
             </div>
-            <div className="menu">
+            <div ref={(el) => (menu = el)} className="menu">
               <button onClick={handleMenu} disabled={disabled}>
                 {state.menuName}
               </button>

@@ -12,8 +12,7 @@ body {
 }
 
 .container {
-  width: 1280px;
-  min-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   .wrapper {
     padding: 0 48px;
@@ -33,7 +32,7 @@ body {
         margin-top: 260px;
         font-size: 24px;
         font-weight: 600;
-        padding-right: 360px;
+        // padding-right: 360px;
       }
     }
   }
@@ -113,6 +112,10 @@ header {
           align-items: center;
           position: relative;
           top: 150px;
+
+          @media (max-width: 751px) {
+            flex-direction: column;
+          }
           nav {
             display: block;
             ul {
@@ -127,6 +130,33 @@ header {
                 overflow: hidden;
                 position: relative;
                 width: 700px;
+
+                @media (max-width: 1024px) {
+                  font-size: 5rem;
+                  width: 600px;
+                }
+                @media (max-width: 855px) {
+                  font-size: 4rem;
+                  width: 500px;
+                }
+                @media (max-width: 750px) {
+                  font-size: 3rem;
+                  width: 400px;
+                  height: 100px;
+                }
+                @media (max-width: 500px) {
+                  font-size: 2.5rem;
+                  width: 300px;
+                  height: 100px;
+                }
+                @media (max-width: 330px) {
+                  font-size: 2rem;
+                  width: 300px;
+                  height: 100px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
                 a {
                   position: absolute;
                   color: #fff;
@@ -141,6 +171,10 @@ header {
           .info {
             color: #fff;
             width: 300px;
+
+            @media (max-width: 751px) {
+              display: none;
+            }
             h3 {
               font-size: 1.2rem;
               margin: 8px auto;
@@ -158,14 +192,28 @@ header {
           margin-top: 16px;
           font-size: 0.8rem;
           font-weight: 600;
+
+          @media (max-width: 695px) {
+            display: flex;
+            flex-wrap: wrap;
+            bottom: -80px;
+          }
+           @media (max-width: 358px) {
+              display: none;
+          }
           span {
             cursor: pointer;
-            &:first-child {
-              margin-left: 64px;
-            }
+            // &:first-child {
+            //   margin-left: 64px;
+            // }
             font-weight: 400;
             margin: 0 32px;
             transition: 0.3s ease-in-out;
+
+            @media (max-width: 695px) {
+              margin-top: 8px;
+            }
+
             &:hover {
               color: #fff;
               background: $black;
@@ -178,6 +226,7 @@ header {
     }
   }
 }
+
 
 @keyframes backgroundEffect {
   0% {
@@ -196,3 +245,4 @@ header {
     background-position: 0% 0%;
   }
 }
+

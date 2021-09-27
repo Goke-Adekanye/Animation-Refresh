@@ -1,5 +1,17 @@
 import gsap from "gsap";
 
+//STAGGER HEADER
+export const staggerHeader = (node1, node2) => {
+  gsap.from([node1, node2], {
+    opacity: 0,
+    x: -20,
+    ease: "Power4.easeInOut",
+    stagger: {
+      amount: 0.1,
+    },
+  });
+};
+
 // OPEN MENU
 export const staggerReveal = (node1, node2) => {
   gsap.from([node1, node2], {
