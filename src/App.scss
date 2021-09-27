@@ -29,7 +29,6 @@ body {
         font-weight: 500;
       }
       h5 {
-        margin-top: 260px;
         font-size: 24px;
         font-weight: 600;
         // padding-right: 360px;
@@ -182,6 +181,8 @@ header {
             p {
               margin: 0 auto;
               font-size: 0.8rem;
+              font-weight: 500;
+              letter-spacing: 0.2rem;
             }
           }
         }
@@ -194,12 +195,8 @@ header {
           font-weight: 600;
 
           @media (max-width: 695px) {
-            display: flex;
-            flex-wrap: wrap;
+            display: none;
             bottom: -80px;
-          }
-           @media (max-width: 358px) {
-              display: none;
           }
           span {
             cursor: pointer;
@@ -227,6 +224,8 @@ header {
   }
 }
 
+
+//============================= HOME PAGE =======================================
 
 @keyframes backgroundEffect {
   0% {

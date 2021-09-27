@@ -1,8 +1,11 @@
-import React from "react";
+import React, { lazy } from "react";
 import "./App.scss";
 import Header from "./components/navbar/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Suspense } from "react";
+import Loader from "./components/loader";
 
+const Home = lazy(() => import("./pages/home"));
 function App() {
   return (
     <Router>
@@ -11,12 +14,18 @@ function App() {
         <div className="container">
           <div className="wrapper">
             <div className="home">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/opportunities" component={Opportunities} />
-                <Route exact path="/solutions" component={Solutions} />
-                <Route exact path="/contact-us" component={Contact} />
-              </Switch>
+              <Suspense fallback={<Loader />}>
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route
+                    exact
+                    path="/opportunities"
+                    component={Opportunities}
+                  />
+                  <Route exact path="/solutions" component={Solutions} />
+                  <Route exact path="/contact-us" component={Contact} />
+                </Switch>
+              </Suspense>
             </div>
           </div>
         </div>
@@ -37,17 +46,4 @@ function Contact() {
   return <p>Feel free to reach us.</p>;
 }
 
-function Home() {
-  return (
-    <div className="container">
-      <div className="wrapper">
-        <h5>
-          The <b>HAMBRG</b>, is a creative, engineer driven, global agency
-          working on advancing the software, advertising and design communities
-          to new heights.
-        </h5>
-      </div>
-    </div>
-  );
-}
 export default App;

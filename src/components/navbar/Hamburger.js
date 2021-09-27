@@ -3,8 +3,8 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
   fadeInUp,
-  handleCity,
-  handleCityReturn,
+  // handleCity,
+  // handleCityReturn,
   handleHover,
   handleHoverExit,
   staggerReveal,
@@ -12,26 +12,26 @@ import {
   staggerText,
 } from "./Animations";
 
-import dallas from "../../images/dallas.webp";
-import austin from "../../images/austin.webp";
-import newyork from "../../images/newyork.webp";
-import sanfrancisco from "../../images/sanfrancisco.webp";
-import beijing from "../../images/beijing.webp";
+// import dallas from "../../images/dallas.webp";
+// import austin from "../../images/austin.webp";
+// import newyork from "../../images/newyork.webp";
+// import sanfrancisco from "../../images/sanfrancisco.webp";
+// import beijing from "../../images/beijing.webp";
 
-const cities = [
-  { name: "Dallas", image: dallas },
-  { name: "Austin", image: austin },
-  { name: "New York", image: newyork },
-  { name: "San Francisco", image: sanfrancisco },
-  { name: "Beijing", image: beijing },
-];
+// const cities = [
+//   { name: "Dallas", image: dallas },
+//   { name: "Austin", image: austin },
+//   { name: "New York", image: newyork },
+//   { name: "San Francisco", image: sanfrancisco },
+//   { name: "Beijing", image: beijing },
+// ];
 
 const Hamburger = ({ state }) => {
   // Create varibles of our dom nodes
   let menuLayer = useRef(null);
   let reveal1 = useRef(null);
   let reveal2 = useRef(null);
-  let cityBackground = useRef(null);
+  // let cityBackground = useRef(null);
   let line1 = useRef(null);
   let line2 = useRef(null);
   let line3 = useRef(null);
@@ -72,7 +72,7 @@ const Hamburger = ({ state }) => {
       ></div>
       <div ref={(el) => (reveal2 = el)} className="menu-layer">
         <div
-          ref={(el) => (cityBackground = el)}
+          // ref={(el) => (cityBackground = el)}
           className="menu-city-background"
         ></div>
         <div className="container">
@@ -121,8 +121,7 @@ const Hamburger = ({ state }) => {
                   their software.
                 </p>
               </div>
-              <div className="locations">
-                {/* Returning the list of cities */}
+              {/* <div className="locations">
                 {cities.map((el) => (
                   <span
                     key={el.name}
@@ -132,7 +131,7 @@ const Hamburger = ({ state }) => {
                     {el.name}
                   </span>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
