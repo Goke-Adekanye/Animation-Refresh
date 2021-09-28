@@ -13,20 +13,14 @@ function App() {
         <Header />
         <div className="container">
           <div className="wrapper">
-            <div className="home">
-              <Suspense fallback={<Loader />}>
-                <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route
-                    exact
-                    path="/opportunities"
-                    component={Opportunities}
-                  />
-                  <Route exact path="/solutions" component={Solutions} />
-                  <Route exact path="/contact-us" component={Contact} />
-                </Switch>
-              </Suspense>
-            </div>
+            <Suspense fallback={<Loader />}>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/opportunities" component={Opportunities} />
+                <Route exact path="/solutions" component={Solutions} />
+                <Route exact path="/contact-us" component={Contact} />
+              </Switch>
+            </Suspense>
           </div>
         </div>
       </div>
