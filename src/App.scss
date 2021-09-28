@@ -235,18 +235,22 @@ header {
     justify-content: center;
     height: 100vh;
     background: url('./images/01.jpg') center center;
-    // background-size: cover;
     background-repeat: no-repeat;
     animation-name: backgroundEffect;
     animation-duration: 30s;
     animation-iteration-count: infinite;
-
+    @media (max-width: 767px) {
+      background-size: cover;
+    }
     .text {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 70%;
       color: #fff;
+      @media (max-width: 300px) {
+        width: 90%;
+      }
 
       .subtitle {
         text-transform: uppercase;
@@ -268,11 +272,29 @@ header {
         width: 0%;
         overflow: hidden;
         white-space: nowrap;
-
+        @media (max-width: 640px) {
+          font-size: 100px;
+        }
+        @media (max-width: 500px) {
+          font-size: 80px;
+        }
+        @media (max-width: 400px) {
+          font-size: 60px;
+        }
+        @media (max-width: 300px) {
+          font-size: 40px;
+        }
       }
       .desc {
-        margin: 0 !important;
+        margin: 0;
+        letter-spacing: 0.3rem;
         line-height: 2;
+        @media (max-width: 640px) {
+          margin-top: 30px;
+        }
+        @media (max-width: 300px) {
+          font-size: small;
+        }
       }
       .readmore {
         display: inline-block;
