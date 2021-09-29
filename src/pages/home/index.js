@@ -32,6 +32,49 @@ export default function Home() {
     });
   }, []);
 
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".second",
+          start: "center bottom",
+        },
+      })
+      // .from(".left-pane", {
+      //   width: "0%",
+      //   duration: 1,
+      //   ease: "Expo.easeInOut",
+      // })
+      .from(".left-pane .div h1", {
+        opacity: 0,
+        duration: 1,
+        x: -20,
+        ease: "Power4.easeInOut",
+      })
+      .from(".left-pane .div p", {
+        opacity: 0,
+        duration: 1,
+        y: 30,
+        ease: "Power4.easeInOut",
+      })
+      .from(".stack", {
+        width: "0%",
+        opacity: 0,
+        duration: 1,
+        delay: 0.2,
+        ease: "Expo.easeInOut",
+        stagger: {
+          amount: 0.1,
+        },
+      })
+      .from(".stack h1", {
+        opacity: 0,
+        duration: 1,
+        x: -20,
+        ease: "Power4.easeInOut",
+      });
+  }, []);
+
   return (
     <section className="homePage">
       <div className="first panel">
@@ -55,6 +98,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="third panel"></div>
+
       <div className="second panel">
         <Link to="/" className="left-pane">
           <div className="div">
@@ -74,7 +119,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="third panel"></div>
     </section>
   );
 }
