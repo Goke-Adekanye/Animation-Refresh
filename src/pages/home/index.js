@@ -13,6 +13,10 @@ export default function Home() {
   let title = useRef(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     textReveal([subtitle, desc, readmore]);
     titleReveal(title);
   }, []);
@@ -51,7 +55,25 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="second panel"></div>
+      <div className="second panel">
+        <Link to="/" className="left-pane">
+          <div className="div">
+            <h1>NEW IN AND RESTOCKS</h1>
+            <p>
+              Discover our mid-week arrivals and most-wanted, most-loved
+              restocks.
+            </p>
+          </div>
+        </Link>
+        <div className="right-pane">
+          <div className="stack stack-div1">
+            <h1>ORIGINALS</h1>
+          </div>
+          <div className="stack stack-div2">
+            <h1>100% COTTON</h1>
+          </div>
+        </div>
+      </div>
       <div className="third panel"></div>
     </section>
   );

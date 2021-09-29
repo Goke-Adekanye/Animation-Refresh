@@ -85,9 +85,9 @@ const Hamburger = ({ state }) => {
                       onMouseEnter={(e) => handleHover(e)}
                       onMouseOut={(e) => handleHoverExit(e)}
                       ref={(el) => (line1 = el)}
-                      to="/opportunities"
+                      to="/"
                     >
-                      Opportunities
+                      Home
                     </Link>
                   </li>
                   <li>
@@ -95,9 +95,9 @@ const Hamburger = ({ state }) => {
                       onMouseEnter={(e) => handleHover(e)}
                       onMouseOut={(e) => handleHoverExit(e)}
                       ref={(el) => (line2 = el)}
-                      to="/solutions"
+                      to="/discover"
                     >
-                      Solutions
+                      Discover
                     </Link>
                   </li>
                   <li>

@@ -314,11 +314,93 @@ header {
 
   .second {
     height: 100vh;
-    background: $deep;
+    display: flex;
+    @media (max-width: 900px) {
+      display: block;
+    }
+    .left-pane {
+      position: relative;
+      height: 100vh;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      background: url('./images/02.jpg') center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: background-color 1s;
+       @media (max-width: 900px) {
+        width: 100%;
+      }
+      &:hover {
+        background-color: rgba(0,0,0,.5);
+      }
+    .div {
+      text-align: center;
+      padding: 1rem;
+
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        margin: 0 0 1rem;
+        font-weight: 500;
+        letter-spacing: 0.3rem;
+        line-height: 2;
+      }
+    }
+    }
+    .left-pane:before {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: inherit;
+      content: ' ';
+    }
+    .right-pane {
+      height: 100vh;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      .stack:before {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background-color: inherit;
+        content: ' ';
+      }
+      .stack {
+          position: relative;
+          height: 50vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: background-color 1s;
+          @media (max-width: 900px) {
+            display: none;
+          }
+        &:hover {
+        background-color: rgba(0,0,0,.5);
+        }
+        h1 {
+          font-size: 40px;
+          letter-spacing: 0.3rem;
+          color: #fff;
+        }
+      }
+      .stack-div1 {
+      background: url('./images/03.jpg') center center;
+      }
+      .stack-div2 {
+      background: url('./images/04.jpg') center center;
+      }
+    }
   }
   .third {
     height: 100vh;
-    background: yellow;
+    background: $deep;
   }
 }
 //============================= END OF HOME PAGE =======================================

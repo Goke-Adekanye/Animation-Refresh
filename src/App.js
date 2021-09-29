@@ -16,8 +16,7 @@ function App() {
             <Suspense fallback={<Loader />}>
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/opportunities" component={Opportunities} />
-                <Route exact path="/solutions" component={Solutions} />
+                <Route exact path="/discover" component={Solutions} />
                 <Route exact path="/contact-us" component={Contact} />
               </Switch>
             </Suspense>
@@ -26,10 +25,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-function Opportunities() {
-  return <p>Discover our numerous opportunities</p>;
 }
 
 function Solutions() {
