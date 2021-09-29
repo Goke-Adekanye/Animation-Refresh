@@ -1,6 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { textReveal, titleReveal } from "./Animations";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   let subtitle = useRef(null);
@@ -13,9 +17,20 @@ export default function Home() {
     titleReveal(title);
   }, []);
 
+  useEffect(() => {
+    gsap.utils.toArray(".panel").forEach((section) => {
+      ScrollTrigger.create({
+        trigger: section,
+        start: "top top",
+        pin: true,
+        pinSpacing: false,
+      });
+    });
+  }, []);
+
   return (
     <section className="homePage">
-      <div className="first">
+      <div className="first panel">
         <div class="text">
           <div>
             <p ref={(el) => (subtitle = el)} class="subtitle">
@@ -36,6 +51,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="second panel"></div>
+      <div className="third panel"></div>
     </section>
   );
 }

@@ -1,4 +1,7 @@
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const textReveal = (node1, node2, node3) => {
   gsap.from([node1, node2, node3], {
