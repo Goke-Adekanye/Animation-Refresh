@@ -27,6 +27,7 @@ export default function Home() {
         trigger: section,
         start: "top top",
         pin: true,
+        scrub: 1,
         pinSpacing: false,
       });
     });
@@ -40,11 +41,6 @@ export default function Home() {
           start: "center bottom",
         },
       })
-      // .from(".left-pane", {
-      //   width: "0%",
-      //   duration: 1,
-      //   ease: "Expo.easeInOut",
-      // })
       .from(".left-pane .div h1", {
         opacity: 0,
         duration: 1,
@@ -98,7 +94,26 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="third panel"></div>
+
+      <div className="third panel">
+        <div className="top">
+          <h1>HALIMRT.</h1>
+        </div>
+        <div className="down">
+          <div className="avail-services">
+            <h4>FREE DELIVERY</h4>
+            <p>for orders over $200 to to the US, Canada and Australia</p>
+          </div>
+          <div className="avail-services">
+            <h4>FREE RETURNS</h4>
+            <p>from the US, Canada and Australia</p>
+          </div>
+          <div className="avail-services">
+            <h4>SECURE PAYMENT</h4>
+            <p>Visa, Mastercard, Amex, Paypal, Paystack, Discover</p>
+          </div>
+        </div>
+      </div>
 
       <div className="second panel">
         <Link to="/" className="left-pane">

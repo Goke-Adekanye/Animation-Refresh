@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 
 $light: #fffbf4;
 $deep: #f3eee8;
 $deep1: #f3efe9;
 $deep2: #c2bdb2;
+$deepBorder: #f0ede6;
 $black: #191919;
+$linkText: #969696;
 
 html,
 body {
@@ -315,10 +318,12 @@ header {
   .second {
     height: 100vh;
     display: flex;
+    background: $light;
     @media (max-width: 900px) {
       display: block;
     }
     .left-pane {
+      margin-right: 1rem;
       position: relative;
       height: 100vh;
       width: 60%;
@@ -333,6 +338,7 @@ header {
       transition: background-color 1s;
        @media (max-width: 900px) {
         width: 100%;
+        margin-right: 0;
       }
       &:hover {
         background-color: rgba(0,0,0,.5);
@@ -391,6 +397,7 @@ header {
         }
       }
       .stack-div1 {
+      margin-bottom: 1rem;
       background: url('./images/03.jpg') center center;
       }
       .stack-div2 {
@@ -400,7 +407,44 @@ header {
   }
   .third {
     height: 100vh;
-    background: $deep;
+    background: $light;
+    .top {
+      height: 50vh;
+      text-align: center;
+
+      h1 {
+        margin: 0;
+        font-size: 200px;
+        color: $black;
+      }
+    }
+    .down {
+      margin: -20px 0 0 -20px;
+      height: 40vh;
+      display: flex;
+      padding: 0 2rem;
+      align-items: center;
+      justify-content: center;
+      border-color: $deepBorder;
+      border-style: solid;
+      border-width: .0625rem 0;
+
+      .avail-services {
+        margin: 20px 0 0 20px;
+        padding: 3rem;
+        text-align: center;
+        h4 {
+          font-size: 15px;
+          font-family: 'Montserrat';
+        }
+        p {
+          font-size: 13px;
+          font-family: 'Libre Baskerville', serif;
+          line-height: 1.8;
+          color: $linkText;
+        }
+      }
+    }
   }
 }
 //============================= END OF HOME PAGE =======================================
