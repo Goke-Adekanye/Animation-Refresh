@@ -11,6 +11,9 @@ export default function Home() {
   let desc = useRef(null);
   let readmore = useRef(null);
   let title = useRef(null);
+  let service1 = useRef(null);
+  let service2 = useRef(null);
+  let service3 = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -71,6 +74,24 @@ export default function Home() {
       });
   }, []);
 
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".third",
+          start: "center bottom",
+        },
+      })
+      .from([service1, service2, service3], {
+        duration: 2,
+        opacity: 0,
+        x: -20,
+        ease: "Expo.easeInOut",
+        stagger: {
+          amount: 1,
+        },
+      });
+  }, []);
   return (
     <section className="homePage">
       <div className="first panel">
@@ -100,15 +121,15 @@ export default function Home() {
           <h1>HALIMRT.</h1>
         </div>
         <div className="down">
-          <div className="avail-services">
+          <div ref={(el) => (service1 = el)} className="avail-services">
             <h4>FREE DELIVERY</h4>
             <p>for orders over $200 to to the US, Canada and Australia</p>
           </div>
-          <div className="avail-services">
+          <div ref={(el) => (service2 = el)} className="avail-services">
             <h4>FREE RETURNS</h4>
             <p>from the US, Canada and Australia</p>
           </div>
-          <div className="avail-services">
+          <div ref={(el) => (service3 = el)} className="avail-services">
             <h4>SECURE PAYMENT</h4>
             <p>Visa, Mastercard, Amex, Paypal, Paystack, Discover</p>
           </div>

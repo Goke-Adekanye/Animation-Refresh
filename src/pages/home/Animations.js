@@ -21,3 +21,15 @@ export const titleReveal = (node) => {
     ease: "Expo.easeInOut",
   });
 };
+
+// export const staggerService = (node1, node2, node3) => {
+//   gsap.from([node1, node2, node3], {
+//     duration: 2,
+//     opacity: 0,
+//     x: -20,
+//     ease: "Expo.easeInOut",
+//     stagger: {
+//       amount: 1,
+//     },
+//   });
+// };

@@ -430,9 +430,15 @@ header {
       border-width: .0625rem 0;
 
       .avail-services {
+        width: 33.3%;
+        min-height: 120px;
         margin: 20px 0 0 20px;
         padding: 3rem;
         text-align: center;
+        transition: background-color 1s;
+        &:hover {
+          background-color: $deep1;
+        }
         h4 {
           font-size: 15px;
           font-family: 'Montserrat';
