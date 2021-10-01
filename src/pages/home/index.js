@@ -91,7 +91,7 @@ export default function Home() {
       .from([service1, service2, service3], {
         duration: 2,
         opacity: 0,
-        x: -20,
+        y: -20,
         ease: "Expo.easeInOut",
         stagger: {
           amount: 1,
