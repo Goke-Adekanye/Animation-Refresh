@@ -82,6 +82,12 @@ export default function Home() {
           start: "center bottom",
         },
       })
+      .from(".top h1", {
+        duration: 1,
+        opacity: 0,
+        y: -30,
+        ease: "Power4.easeInOut",
+      })
       .from([service1, service2, service3], {
         duration: 2,
         opacity: 0,
@@ -92,6 +98,7 @@ export default function Home() {
         },
       });
   }, []);
+
   return (
     <section className="homePage">
       <div className="first panel">

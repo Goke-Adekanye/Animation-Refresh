@@ -409,18 +409,47 @@ header {
     height: 100vh;
     background: $light;
     .top {
-      height: 50vh;
+      height: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-
+      @media (max-width: 767px) {
+        height: 30%;
+      }
+      @media (max-width: 550px) {
+        height: 25%;
+      }
+      @media (max-width: 360px) {
+        height: 20%;
+      }
+      @media (max-width: 305px) {
+        height: 15%;
+      }
       h1 {
         margin: 0;
         font-size: 200px;
         color: $black;
+
+        @media (max-width: 1024px) {
+          font-size: 150px;
+        }
+        @media (max-width: 767px) {
+          font-size: 100px;
+        }
+        @media (max-width: 550px) {
+          font-size: 80px;
+        }
+        @media (max-width: 407px) {
+          font-size: 60px;
+        }
+        @media (max-width: 300px) {
+          font-size: 40px;
+        }
       }
     }
     .down {
-      margin: -20px 0 0 -20px;
-      height: 40vh;
+      height: 50%;
       display: flex;
       padding: 0 2rem;
       align-items: center;
@@ -428,16 +457,33 @@ header {
       border-color: $deepBorder;
       border-style: solid;
       border-width: .0625rem 0;
-
+      @media (max-width: 900px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 767px) {
+        height: 65%;
+      }
+      @media (max-width: 550px) {
+        height: 70%;
+      }
+      @media (max-width: 360px) {
+        height: 75%;
+      }
+      @media (max-width: 305px) {
+        height: 80%;
+      }
       .avail-services {
         width: 33.3%;
-        min-height: 120px;
         margin: 20px 0 0 20px;
         padding: 3rem;
         text-align: center;
         transition: background-color 1s;
-        &:hover {
-          background-color: $deep1;
+        @media (max-width: 900px) {
+          width: 45%;
+          padding: 0;
+        }
+        @media (max-width: 550px) {
+          width: 80%;
         }
         h4 {
           font-size: 15px;
