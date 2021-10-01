@@ -179,9 +179,9 @@ header {
             color: $black;
             width: 300px;
 
-            @media (max-width: 751px) {
-              margin-top: 2rem;
-            }
+            // @media (max-width: 751px) {
+            //   margin-top: 1rem;
+            // }
             h3 {
               font-size: 1.2rem;
               margin: 8px auto;
@@ -245,9 +245,9 @@ header {
     animation-name: backgroundEffect;
     animation-duration: 30s;
     animation-iteration-count: infinite;
-    @media (max-width: 767px) {
-      background-size: cover;
-    }
+    // @media (max-width: 767px) {
+    //   background-size: cover;
+    // }
     .text {
       display: flex;
       align-items: center;
@@ -483,7 +483,7 @@ header {
           padding: 0;
         }
         @media (max-width: 550px) {
-          width: 100%;
+          width: 80%;
         }
         h4 {
           font-size: 15px;
