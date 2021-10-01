@@ -60,10 +60,10 @@ export default function Home() {
         width: "0%",
         opacity: 0,
         duration: 1,
-        delay: 0.2,
+        delay: -0.4,
         ease: "Expo.easeInOut",
         stagger: {
-          amount: 0.1,
+          amount: 0.2,
         },
       })
       .from(".stack h1", {
