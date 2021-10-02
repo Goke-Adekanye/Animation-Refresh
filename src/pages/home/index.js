@@ -30,8 +30,9 @@ export default function Home() {
         trigger: section,
         start: "top top",
         pin: true,
-        scrub: 1,
+        scrub: true,
         pinSpacing: false,
+        pinType: "fixed",
       });
     });
   }, []);
@@ -40,7 +41,7 @@ export default function Home() {
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: ".second",
+          trigger: ".third",
           start: "center bottom",
         },
       })
@@ -78,7 +79,7 @@ export default function Home() {
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: ".third",
+          trigger: ".fourth",
           start: "center bottom",
         },
       })
@@ -123,27 +124,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="third panel">
-        <div className="top">
-          <h1>HALIMRT.</h1>
-        </div>
-        <div className="down">
-          <div ref={(el) => (service1 = el)} className="avail-services">
-            <h4>FREE DELIVERY</h4>
-            <p>for orders over $200 to to the US, Canada and Australia</p>
-          </div>
-          <div ref={(el) => (service2 = el)} className="avail-services">
-            <h4>FREE RETURNS</h4>
-            <p>from the US, Canada and Australia</p>
-          </div>
-          <div ref={(el) => (service3 = el)} className="avail-services">
-            <h4>SECURE PAYMENT</h4>
-            <p>Visa, Mastercard, Amex, Paypal, Paystack, Discover</p>
-          </div>
-        </div>
-      </div>
+      <div className="second panel"></div>
 
-      <div className="second panel">
+      <div className="third panel">
         <Link to="/" className="left-pane">
           <div className="div">
             <h1>NEW IN AND RESTOCKS</h1>
@@ -159,6 +142,26 @@ export default function Home() {
           </div>
           <div className="stack stack-div2">
             <h1>100% COTTON</h1>
+          </div>
+        </div>
+      </div>
+
+      <div className="fourth panel">
+        <div className="top">
+          <h1>HALIMRT.</h1>
+        </div>
+        <div className="down">
+          <div ref={(el) => (service1 = el)} className="avail-services">
+            <h4>FREE DELIVERY</h4>
+            <p>for orders over $200 to to the US, Canada and Australia</p>
+          </div>
+          <div ref={(el) => (service2 = el)} className="avail-services">
+            <h4>FREE RETURNS</h4>
+            <p>from the US, Canada and Australia</p>
+          </div>
+          <div ref={(el) => (service3 = el)} className="avail-services">
+            <h4>SECURE PAYMENT</h4>
+            <p>Visa, Mastercard, Amex, Paypal, Paystack, Discover</p>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   .wrapper {
     padding: 0 10px;
@@ -245,9 +245,9 @@ header {
     animation-name: backgroundEffect;
     animation-duration: 30s;
     animation-iteration-count: infinite;
-    // @media (max-width: 767px) {
-    //   background-size: cover;
-    // }
+    @media (max-width: 767px) {
+      background-size: cover;
+    }
     .text {
       display: flex;
       align-items: center;
@@ -314,8 +314,11 @@ header {
       }
     }
   }
-
   .second {
+    height: 100vh;
+    background: $light;
+  }
+  .third {
     height: 100vh;
     display: flex;
     background: $light;
@@ -405,8 +408,10 @@ header {
       }
     }
   }
-  .third {
+  .fourth {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: $light;
     .top {
       height: 40%;
@@ -443,7 +448,7 @@ header {
         @media (max-width: 407px) {
           font-size: 60px;
         }
-        @media (max-width: 300px) {
+        @media (max-width: 320px) {
           font-size: 40px;
         }
       }
