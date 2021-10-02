@@ -42,6 +42,23 @@ export default function Home() {
     gsap
       .timeline({
         scrollTrigger: {
+          trigger: ".second",
+          start: "center bottom",
+        },
+      })
+      .to("video", {
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%",
+        ease: "Expo.easeInOut",
+        duration: 1.5,
+      })
+      .from(".div-desc h2", { translateY: -50, opacity: 0 })
+      .from(".div-desc p", { translateY: 50, opacity: 0 });
+  }, []);
+
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
           trigger: ".third",
           start: "center bottom",
         },
@@ -132,7 +149,7 @@ export default function Home() {
           </video>
         </div>
         <div className="div-desc">
-          <h2>Experience Halimrt. The new Luxury Class.</h2>
+          <h2>Experience Halimrt. The new Classic Luxury.</h2>
           <p>
             We’ve heard the story: if you want to be successful, you have to
             leave your comfort zone. Until now. <br /> <br /> Because Halimrt
