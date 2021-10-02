@@ -4,6 +4,7 @@ import { textReveal, titleReveal } from "./Animations";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import vid from "../../images/vid 01.webm";
+import Glitch from "../../components/glitch";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -199,6 +200,10 @@ export default function Home() {
             <p>Visa, Mastercard, Amex, Paypal, Paystack, Discover</p>
           </div>
         </div>
+      </div>
+
+      <div className="fifth panel">
+        <Glitch />
       </div>
     </section>
   );

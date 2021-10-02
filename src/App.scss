@@ -443,6 +443,7 @@ header {
       }
     }
   }
+
   .fourth {
     height: 100vh;
     display: flex;
@@ -540,7 +541,13 @@ header {
       }
     }
   }
+
+  .fifth {
+    height: 100vh;
+    background: #000;
+  }
 }
+
 //============================= END OF HOME PAGE =======================================
 
 @keyframes backgroundEffect {
@@ -560,4 +567,6 @@ header {
     background-position: 0% 0%;
   }
 }
+
+//============================================
 
