@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { textReveal, titleReveal } from "./Animations";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import vid from "../../images/vid 01.webm";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,9 +31,9 @@ export default function Home() {
         trigger: section,
         start: "top top",
         pin: true,
-        scrub: true,
+        scrub: 1,
         pinSpacing: false,
-        pinType: "fixed",
+        // pinType: "fixed",
       });
     });
   }, []);
@@ -124,7 +125,24 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="second panel"></div>
+      <div className="second panel">
+        <div className="div-vid">
+          <video autoplay="autoplay" muted loop>
+            <source src={vid} type="video/mp4" />
+          </video>
+        </div>
+        <div className="div-desc">
+          <h2>Experience Halimrt. The new Luxury Class.</h2>
+          <p>
+            We’ve heard the story: if you want to be successful, you have to
+            leave your comfort zone. Until now. <br /> <br /> Because Halimrt
+            invites you to do the opposite: see what luxury feels like.
+            Redefining what fashion can be. But not only that. It’s a global
+            campaign that helps change the brand’s positioning from premium to
+            luxury. Even if that means stepping out of our own comfort zone
+          </p>
+        </div>
+      </div>
 
       <div className="third panel">
         <Link to="/" className="left-pane">
