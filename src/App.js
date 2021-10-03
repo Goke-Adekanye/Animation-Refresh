@@ -4,6 +4,7 @@ import Header from "./components/navbar/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Suspense } from "react";
 import Loader from "./components/loader";
+import Footer from "./components/footer";
 
 const Home = lazy(() => import("./pages/home"));
 function App() {
@@ -22,6 +23,7 @@ function App() {
             </Suspense>
           </div>
         </div>
+        <Footer />
       </div>
     </Router>
   );
