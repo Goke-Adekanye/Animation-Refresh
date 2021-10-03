@@ -182,6 +182,10 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="fifth panel">
+        <Glitch />
+      </div>
+
       <div className="fourth panel">
         <div className="top">
           <h1>HALIMRT.</h1>
@@ -200,10 +204,6 @@ export default function Home() {
             <p>Visa, Mastercard, Amex, Paypal, Paystack, Discover</p>
           </div>
         </div>
-      </div>
-
-      <div className="fifth panel">
-        <Glitch />
       </div>
     </section>
   );
