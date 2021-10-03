@@ -290,6 +290,9 @@ header {
         @media (max-width: 300px) {
           font-size: 40px;
         }
+        @media (max-width: 250px) {
+          font-size: 30px;
+        }
       }
       .desc {
         margin: 0;
@@ -319,14 +322,38 @@ header {
     display: flex;
     align-items: center;
     background: $light;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem 0;
+
+    }
     .div-vid {
       width: 50%;
       height: 80vh;
       padding: 0;
+      @media (max-width: 767px) {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 330px) {
+        height: 45vh;
+      }
+      @media (max-width: 253px) {
+        height: 40vh;
+      }
+      @media (max-width: 227px) {
+        height: 30vh;
+      }
       video {
         width: 100%;
         height: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        @media (max-width: 767px) {
+          object-fit: cover;
+          object-position: center;
+        }
       }
     }
     .div-desc {
@@ -336,13 +363,36 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      
+      @media (max-width: 767px) {
+       width: 100%;
+       height: 45vh;
+       padding: 0;
+      }
+      @media (max-width: 330px) {
+        height: 50vh;
+      }
+      @media (max-width: 253px) {
+        height: 55vh;
+      }
+      @media (max-width: 227px) {
+        height: 65vh;
+      }
       h2 {
         font-size: 30px;
         font-family: 'Anton', sans-serif;
         line-height: 1.2;
         letter-spacing: 0.01em;
         font-weight: bold;
+        @media (max-width: 767px) {
+          margin: 0;
+          font-size: 25px;
+        }
+        @media (max-width: 450px) {
+          font-size: 20px;
+        }
+        @media (max-width: 380px) {
+          font-size: 17px;
+        }
       }
       p {
         color: #333333;
@@ -350,6 +400,17 @@ header {
         font-family: 'Libre Baskerville', serif;
         line-height: 1.67;
         letter-spacing: 0.01em;
+        @media (max-width: 767px) {
+          font-size: 13px;
+          margin-top: 2rem;
+          line-height: 1.7;
+        }
+        @media (max-width: 380px) {
+          margin-top: 1rem;
+        }
+        @media (max-width: 330px) {
+          line-height: 1.5;
+        }
       }
     }
   }
@@ -387,6 +448,9 @@ header {
 
       h1 {
         font-size: 40px;
+        @media (max-width: 280px) {
+          font-size: 30px;
+        }
       }
       p {
         margin: 0 0 1rem;
@@ -487,6 +551,9 @@ header {
         @media (max-width: 320px) {
           font-size: 40px;
         }
+        @media (max-width: 289px) {
+          font-size: 35px;
+        }
       }
     }
     .down {
@@ -512,6 +579,7 @@ header {
       }
       @media (max-width: 305px) {
         height: 80%;
+        padding: 0 1rem;
       }
       .avail-services {
         width: 33.3%;
@@ -524,8 +592,11 @@ header {
           padding: 0;
         }
         @media (max-width: 550px) {
-          width: 80%;
+          width: 100%;
           margin-left: 0;
+        }
+        @media (max-width: 289px) {
+          margin: 10px 0 0 10px;
         }
         h4 {
           font-size: 15px;
