@@ -18,9 +18,8 @@ footer {
             position: relative;
             font-weight: 200;
             color: $black;
-            padding-bottom: 1rem;
             margin: 0 10px;
-            border-top: 2px solid $deepBorder;
+            border-top: 1px solid $deepBorder;
             background-color: $light;
 
             .bottom-container {
@@ -128,6 +127,33 @@ footer {
                              }
                          }
                      }
+                  }
+              }
+
+              .legal-div{
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  color: #ababab;
+                  font-weight: 500;
+                  font-size: 13px;
+                  line-height: 1.38889vw;
+                  ul {
+                      list-style: none;
+                      padding: 0;
+                      margin: 0;
+                      display: flex;
+                      li {
+                        padding-right: 1.38889vw;
+                      }
+                  }
+                  .lg-second {
+                    border-bottom: 1.5px solid #ababab;
+                    p {
+                        margin: 0;
+                        margin-bottom: 2px;
+                    }
                   }
               }
           }

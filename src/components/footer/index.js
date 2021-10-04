@@ -1,8 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./footer.scss";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Footer() {
+  // Create varibles of our dom nodes
+  //   let num = useRef(null);
+  //   let add = useRef(null);
+  //   let link = useRef(null);
+
+  //   useEffect(() => {
+  //     gsap
+  //       .timeline({
+  //         scrollTrigger: {
+  //           trigger: ".bottom",
+  //           start: "center bottom",
+  //         },
+  //       })
+  //       .from([num, add, link], {
+  //         duration: 6,
+  //         opacity: 0,
+  //         x: -20,
+  //         ease: "Expo.easeInOut",
+  //         stagger: {
+  //           amount: 1,
+  //         },
+  //       });
+  //   }, []);
+
   return (
     <footer>
       <div className="container">
@@ -58,6 +86,17 @@ export default function Footer() {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="legal-div">
+            <ul className="lg-first">
+              <li>ALL RIGHT RESERVED 2021</li>
+              <li>LEGALS</li>
+            </ul>
+
+            <div className="lg-second">
+              <p>HALIMRT. 2021</p>
             </div>
           </div>
         </div>

@@ -80,7 +80,7 @@ export default function Home() {
         width: "0%",
         opacity: 0,
         duration: 1,
-        delay: -0.4,
+        delay: -0.6,
         ease: "Expo.easeInOut",
         stagger: {
           amount: 0.2,
