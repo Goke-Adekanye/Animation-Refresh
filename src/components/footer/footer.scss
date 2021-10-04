@@ -68,12 +68,6 @@ footer {
                     align-items: flex-start;
                     width: 80%;
                     padding: 2.5rem 0;
-                    @media only screen and (max-width: 550px) {
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        padding: 1.5rem 0;
-                    }
                     h2 {
                         font-size: 1rem;
                         margin: 0;
@@ -91,45 +85,30 @@ footer {
                       }
 
                      .contact-num {
-                        @media only screen and (max-width: 550px) {
-                            margin-bottom: 1rem;
-                        }
                         .contact-num-head {
                             display: flex;
                             align-items: center;
                             text-transform: uppercase;
                             padding: 1rem 0;
                             margin-bottom: 1rem;
-                            @media only screen and (max-width: 550px) {
-                                padding: 0.5rem 0;
-                                margin-bottom: 0;
-                            }
+                         
                           }
                      }
                      .contact-add {
-                        @media only screen and (max-width: 550px) {
-                            margin-bottom: 1rem;
-                        }
                         .contact-add-head {
                             display: flex;
                             align-items: center;
                             text-transform: uppercase;
                             padding: 1rem 0;
                             margin-bottom: 1rem;
-                            @media only screen and (max-width: 550px) {
-                                padding: 0.5rem 0;
-                                margin-bottom: 0;
-                            }
+                        
                           }
                           .contact-add-body {
                             display: flex;
                             max-width: 30vw;
                             text-align: justify;
                             text-transform: uppercase;
-                            @media only screen and (max-width: 550px) {
-                                max-width: 50ch;
-                                text-align: left;
-                            }
+         
                           }
                      }
                      .links {
@@ -141,10 +120,7 @@ footer {
                             text-transform: uppercase;
                             padding: 1rem 0;
                             margin-bottom: 1rem;
-                            @media only screen and (max-width: 550px) {
-                                padding: 0.5rem 0;
-                                margin-bottom: 0;
-                            }
+                         
                          }
                          .link-body {
                              ul {
@@ -170,10 +146,10 @@ footer {
                                     a::after {
                                         content: "";
                                         right: 0;
-                                        bottom: 0;
+                                        bottom: 0.1rem;
                                         height: 1px;
                                         width: 100%;
-                                        margin-top: -1rem;
+                                        // margin-top: -3rem;
                                         position: absolute;
                                         background: #5a5a5a;
                                         transform: scaleX(0);
@@ -197,9 +173,6 @@ footer {
                   font-weight: 500;
                   font-size: 13px;
                   line-height: 1.38889vw;
-                  @media only screen and (max-width: 550px) {
-                    flex-wrap: wrap;
-                }
                 
                   ul {
                       list-style: none;
@@ -212,9 +185,6 @@ footer {
                   }
                   .lg-second {
                     border-bottom: 1.5px solid #ababab;
-                    @media only screen and (max-width: 413px) {
-                        margin-top: 1rem;
-                    }
                     p {
                         margin: 0;
                         margin-bottom: 2px;
