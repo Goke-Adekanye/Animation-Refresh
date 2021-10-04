@@ -28,6 +28,7 @@ footer {
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: flex-start;
+               
 
                 .contact-head {
                     padding: 0;
@@ -36,9 +37,28 @@ footer {
                     justify-content: flex-start;
                     align-items: flex-start;
                     font-size: 2.5rem;
-
+                    @media screen and (max-width: 1030px) {
+                          font-size: 2rem;
+                      }
+                      @media screen and (max-width: 770px) {
+                          font-size: 1.7rem;
+                      }
+                      @media only screen and (max-width: 550px) {
+                        width: 80%;
+                        font-size: 1.25rem;
+                        padding: 1.5rem 0;
+                      }
+                      @media only screen and (max-width: 412px) {
+                          font-size: 1.1rem;
+                      }
+                      @media only screen and (max-width: 380px) {
+                          font-size: 1.05rem;
+                        }
                     h1 {
                         font-weight: 100;
+                        @media only screen and (max-width: 550px) {
+                            margin: 0;
+                          }
                       }
                   }
 
@@ -48,45 +68,83 @@ footer {
                     align-items: flex-start;
                     width: 80%;
                     padding: 2.5rem 0;
-
+                    @media only screen and (max-width: 550px) {
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        padding: 1.5rem 0;
+                    }
                     h2 {
                         font-size: 1rem;
                         margin: 0;
+                        @media only screen and (max-width: 550px) {
+                            font-size: 0.7rem;
+                        }
                       }
                     h3 {
                         font-size: 1.2rem;
                         font-weight: 100;
                         margin: 0;
+                        @media only screen and (max-width: 550px) {
+                            font-size: 1.1rem;
+                        }
                       }
 
                      .contact-num {
+                        @media only screen and (max-width: 550px) {
+                            margin-bottom: 1rem;
+                        }
                         .contact-num-head {
                             display: flex;
+                            align-items: center;
                             text-transform: uppercase;
                             padding: 1rem 0;
                             margin-bottom: 1rem;
+                            @media only screen and (max-width: 550px) {
+                                padding: 0.5rem 0;
+                                margin-bottom: 0;
+                            }
                           }
                      }
                      .contact-add {
+                        @media only screen and (max-width: 550px) {
+                            margin-bottom: 1rem;
+                        }
                         .contact-add-head {
                             display: flex;
+                            align-items: center;
                             text-transform: uppercase;
                             padding: 1rem 0;
                             margin-bottom: 1rem;
+                            @media only screen and (max-width: 550px) {
+                                padding: 0.5rem 0;
+                                margin-bottom: 0;
+                            }
                           }
                           .contact-add-body {
                             display: flex;
                             max-width: 30vw;
                             text-align: justify;
                             text-transform: uppercase;
+                            @media only screen and (max-width: 550px) {
+                                max-width: 50ch;
+                                text-align: left;
+                            }
                           }
                      }
                      .links {
+                        @media only screen and (max-width: 550px) {
+                            margin-bottom: 1rem;
+                        }
                          .links-head {
                             display: flex;
                             text-transform: uppercase;
                             padding: 1rem 0;
                             margin-bottom: 1rem;
+                            @media only screen and (max-width: 550px) {
+                                padding: 0.5rem 0;
+                                margin-bottom: 0;
+                            }
                          }
                          .link-body {
                              ul {
@@ -139,6 +197,10 @@ footer {
                   font-weight: 500;
                   font-size: 13px;
                   line-height: 1.38889vw;
+                  @media only screen and (max-width: 550px) {
+                    flex-wrap: wrap;
+                }
+                
                   ul {
                       list-style: none;
                       padding: 0;
@@ -150,6 +212,9 @@ footer {
                   }
                   .lg-second {
                     border-bottom: 1.5px solid #ababab;
+                    @media only screen and (max-width: 413px) {
+                        margin-top: 1rem;
+                    }
                     p {
                         margin: 0;
                         margin-bottom: 2px;
