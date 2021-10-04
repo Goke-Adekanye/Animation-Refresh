@@ -26,18 +26,18 @@ export default function Home() {
     titleReveal(title);
   }, []);
 
-  useEffect(() => {
-    gsap.utils.toArray(".panel").forEach((section) => {
-      ScrollTrigger.create({
-        trigger: section,
-        start: "top top",
-        pin: true,
-        scrub: 1,
-        pinSpacing: false,
-        // pinType: "fixed",
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.utils.toArray(".panel").forEach((section) => {
+  //     ScrollTrigger.create({
+  //       trigger: section,
+  //       start: "top top",
+  //       pin: true,
+  //       scrub: 1,
+  //       pinSpacing: false,
+  //       // pinType: "fixed",
+  //     });
+  //   });
+  // }, []);
 
   useEffect(() => {
     gsap
