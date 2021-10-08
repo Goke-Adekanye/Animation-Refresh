@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { textReveal, titleReveal } from "./Animations";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import vid from "../../images/vid 01.webm";
+import vid from "../../images/live-fashion-show.mp4";
 import Glitch from "../../components/glitch";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -26,18 +26,18 @@ export default function Home() {
     titleReveal(title);
   }, []);
 
-  useEffect(() => {
-    gsap.utils.toArray(".panel").forEach((section) => {
-      ScrollTrigger.create({
-        trigger: section,
-        start: "top top",
-        pin: true,
-        scrub: 1,
-        pinSpacing: false,
-        // pinType: "fixed",
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.utils.toArray(".panel").forEach((section) => {
+  //     ScrollTrigger.create({
+  //       trigger: section,
+  //       start: "top top",
+  //       pin: true,
+  //       scrub: 1,
+  //       pinSpacing: false,
+  //       // pinType: "fixed",
+  //     });
+  //   });
+  // }, []);
 
   useEffect(() => {
     gsap
