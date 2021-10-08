@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import vid from "../../images/live-fashion-show.mp4";
 import Glitch from "../../components/glitch";
+import HFS from "../../components/horizontal fake scroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,18 +27,18 @@ export default function Home() {
     titleReveal(title);
   }, []);
 
-  useEffect(() => {
-    gsap.utils.toArray(".panel").forEach((section) => {
-      ScrollTrigger.create({
-        trigger: section,
-        start: "top top",
-        pin: true,
-        scrub: 1,
-        pinSpacing: false,
-        // pinType: "fixed",
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.utils.toArray(".panel").forEach((section) => {
+  //     ScrollTrigger.create({
+  //       trigger: section,
+  //       start: "top top",
+  //       pin: true,
+  //       scrub: 1,
+  //       pinSpacing: false,
+  //       // pinType: "fixed",
+  //     });
+  //   });
+  // }, []);
 
   useEffect(() => {
     gsap
@@ -184,6 +185,10 @@ export default function Home() {
 
       <div className="fifth panel">
         <Glitch />
+      </div>
+
+      <div className="panel">
+        <HFS />
       </div>
 
       <div className="fourth panel">
