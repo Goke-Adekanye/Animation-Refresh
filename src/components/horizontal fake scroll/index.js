@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./main.scss";
-import girl from "../../images/01.jpg";
+import girl from "../../images/11.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,8 +31,9 @@ export default function HFS() {
   return (
     <div class="demo-wrapper">
       <section class="demo-text">
-        <div class="wrapper text textone">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+        <div class="wrapper text textone">CLASSICFASHIONNLUXURY</div>
       </section>
+
       <section class="demo-gallery">
         <ul class="wrapper ulone">
           <li>
@@ -62,34 +63,9 @@ export default function HFS() {
           </li>
         </ul>
       </section>
-      <section class="demo-gallery">
-        <ul class="wrapper ulthree">
-          <li>
-            <img alt="fake" src={girl} />
-          </li>
-          <li>
-            <img alt="fake" src={girl} />
-          </li>
-          <li>
-            <img alt="fake" src={girl} />
-          </li>
-        </ul>
-      </section>
-      <section class="demo-gallery">
-        <ul class="wrapper ulfour">
-          <li>
-            <img alt="fake" src={girl} />
-          </li>
-          <li>
-            <img alt="fake" src={girl} />
-          </li>
-          <li>
-            <img alt="fake" src={girl} />
-          </li>
-        </ul>
-      </section>
+
       <section class="demo-text">
-        <div class="wrapper text texttwo">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+        <div class="wrapper text texttwo">CLASSICFASHIONNLUXURY</div>
       </section>
     </div>
   );

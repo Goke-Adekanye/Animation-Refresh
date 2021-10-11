@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import vid from "../../images/live-fashion-show.mp4";
 import Glitch from "../../components/glitch";
-import HFS from "../../components/horizontal fake scroll/indexx";
+import HFS from "../../components/horizontal fake scroll";
 
 gsap.registerPlugin(ScrollTrigger);
 

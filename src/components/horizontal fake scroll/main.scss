@@ -33,12 +33,10 @@
         
         li {
             flex-shrink: 0;
-            width: clamp(500px, 50vw, 800px);
+            width: clamp(500px, 50vw, 700px);
             margin-right: 1rem;
             img {
-                height: 350px;
-                width: 650px;
-                object-fit: cover;
+                width: 100%;
             }
         }
       }
@@ -51,12 +49,12 @@
     .ultwo {
         transform: translate(-3216px, 0px)
     }
-    .ulthree {
-        transform: translate(100%, 0px)
-    }
-    .ulfour {
-        transform: translate(-2416px, 0px)
-    }
+    // .ulthree {
+    //     transform: translate(100%, 0px)
+    // }
+    // .ulfour {
+    //     transform: translate(-3416px, 0px)
+    // }
     
   }
 //   .demo-gallery:not(.last) {

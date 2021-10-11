@@ -71,6 +71,13 @@ footer {
                     align-items: flex-start;
                     width: 80%;
                     padding: 2.5rem 0;
+                    @media only screen and (max-width: 767px) {
+                        flex-wrap: wrap;
+                        padding: 1rem 0;
+                    }
+                    @media only screen and (max-width: 640px) {
+                        display: block;
+                    }
                     h2 {
                         font-size: 1rem;
                         margin: 0;
@@ -88,41 +95,63 @@ footer {
                       }
 
                      .contact-num {
+                        @media only screen and (max-width: 767px) {
+                            width: 30%;
+                        }
+                        @media only screen and (max-width: 640px) {
+                            width: 80%;
+                        }
                         .contact-num-head {
                             display: flex;
                             align-items: center;
                             text-transform: uppercase;
                             padding: 1rem 0;
                             margin-bottom: 1rem;
-                         
+                            @media only screen and (max-width: 640px) {
+                                margin-bottom: 0;
+                            }
                           }
                      }
                      .contact-add {
+                        @media only screen and (max-width: 767px) {
+                            width: 70%;
+                        }
+                        @media only screen and (max-width: 640px) {
+                            width: 80%;
+                        }
                         .contact-add-head {
                             display: flex;
                             align-items: center;
                             text-transform: uppercase;
                             padding: 1rem 0;
                             margin-bottom: 1rem;
-                        
+                            @media only screen and (max-width: 640px) {
+                                margin-bottom: 0;
+                            }
                           }
                           .contact-add-body {
                             display: flex;
                             max-width: 30vw;
                             text-align: justify;
                             text-transform: uppercase;
+                            @media only screen and (max-width: 767px) {
+                                max-width: 100%;
+                            }
          
                           }
                      }
                      .links {
-                        @media only screen and (max-width: 550px) {
-                            margin-bottom: 1rem;
+                         @media only screen and (max-width: 767px) {
+                            margin-top: 1rem;
                         }
                          .links-head {
                             display: flex;
                             text-transform: uppercase;
                             padding: 1rem 0;
                             margin-bottom: 1rem;
+                            @media only screen and (max-width: 640px) {
+                                margin-bottom: 0;
+                            }
                          
                          }
                          .link-body {
@@ -175,18 +204,31 @@ footer {
                   font-weight: 500;
                   font-size: 13px;
                   line-height: 1.38889vw;
-                
+                  @media only screen and (min-width: 768px) {
+                    margin-top: 2rem;
+                }
+                @media only screen and (max-width: 457px) {
+                    flex-wrap: wrap;
+                }
+               
                   ul {
                       list-style: none;
                       padding: 0;
                       margin: 0;
                       display: flex;
+                      @media only screen and (max-width: 457px) {
+                        width: 100%;
+                    }
                       li {
                         padding-right: 1.38889vw;
                       }
                   }
                   .lg-second {
                     border-bottom: 1.5px solid $txt-white;
+                    @media only screen and (max-width: 457px) {
+                        // width: 100%;
+                        margin-top: 1.5rem;
+                    }
                     p {
                         margin: 0;
                         margin-bottom: 2px;
