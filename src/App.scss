@@ -253,6 +253,7 @@ header {
     justify-content: center;
     height: 100vh;
     background: url('./images/01.jpg') center center;
+    background-color: rgba(0,0,0,.5) !important;
     background-repeat: no-repeat;
     animation-name: backgroundEffect;
     animation-duration: 30s;

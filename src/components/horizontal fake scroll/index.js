@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./main.scss";
+import girl from "../../images/01.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,94 +36,55 @@ export default function HFS() {
       <section class="demo-gallery">
         <ul class="wrapper ulone">
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=66"
-            />
+            <img alt="fake" src={girl} />
           </li>
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=150"
-            />
+            <img alt="fake" src={girl} />
           </li>
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=106"
-            />
+            <img alt="fake" src={girl} />
           </li>
         </ul>
       </section>
       <section class="demo-gallery">
         <ul class="wrapper ultwo">
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=148"
-            />
+            <img alt="fake" src={girl} />
           </li>
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=26"
-            />
+            <img alt="fake" src={girl} />
           </li>
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=198"
-            />
+            <img alt="fake" src={girl} />
           </li>
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=10"
-            />
+            <img alt="fake" src={girl} />
           </li>
         </ul>
       </section>
       <section class="demo-gallery">
         <ul class="wrapper ulthree">
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=159"
-            />
+            <img alt="fake" src={girl} />
           </li>
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=197"
-            />
+            <img alt="fake" src={girl} />
           </li>
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=33"
-            />
+            <img alt="fake" src={girl} />
           </li>
         </ul>
       </section>
       <section class="demo-gallery">
         <ul class="wrapper ulfour">
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=125"
-            />
+            <img alt="fake" src={girl} />
           </li>
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=149"
-            />
+            <img alt="fake" src={girl} />
           </li>
           <li>
-            <img
-              alt="fake"
-              src="https://source.unsplash.com/random/1240x874?sig=52"
-            />
+            <img alt="fake" src={girl} />
           </li>
         </ul>
       </section>

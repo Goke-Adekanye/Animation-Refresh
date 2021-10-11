@@ -143,7 +143,7 @@ footer {
                                         text-decoration: none;
                                         &:hover::after {
                                             transform: scaleX(1);
-                                            transform-origin: left;
+                                            // transform-origin: right;
                                         }
                                     }
                                     a::after {
@@ -156,7 +156,7 @@ footer {
                                         background: $txt-white;
                                         transform: scaleX(0);
                                         transition: transform .4s cubic-bezier(.77,0,.175,1);
-                                        transform-origin: right;
+                                        transform-origin: middle;
                                        
                                     }
                                 }

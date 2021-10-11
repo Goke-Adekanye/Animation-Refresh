@@ -1,19 +1,15 @@
 
 
  .demo-wrapper::-webkit-scrollbar {
-    display: none;
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
   }
 .demo-wrapper {
   overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
  
   h1 { font-size: 5rem }
   h2 { font-size: 2rem }
-
-// img {
-//   width: 100%;
-//   height: auto;
-//   background: #f0f0f0;
-// }
 
   .demo-text {
     .text {
@@ -38,10 +34,11 @@
         li {
             flex-shrink: 0;
             width: clamp(500px, 50vw, 800px);
-            // padding-right: 1rem;
+            margin-right: 1rem;
             img {
-                height: 400px;
-                width: 600px;
+                height: 350px;
+                width: 650px;
+                object-fit: cover;
             }
         }
       }

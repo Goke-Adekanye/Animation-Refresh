@@ -1,0 +1,66 @@
+$bg-black: #050203 ;
+$rc-black: #0A0A0A;
+$txt-white: #FFFFFF;
+
+.demo-wrapperr::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+  .demo-wrapperr {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    .demo-text {
+        .text {
+            font-size: 200px;
+            line-height: 1;
+            font-weight: 900;
+            color: $txt-white;
+            @media (max-width: 1024px) {
+                font-size: 150px;
+              }
+              @media (max-width: 767px) {
+                font-size: 100px;
+              }
+              @media (max-width: 550px) {
+                font-size: 80px;
+              }
+          
+          }
+        .textone {
+            transform: translate(-3669px, 0px)
+        }
+        .texttwo {
+            transform: translate(100%, 0px)
+        }
+  }
+  .demo-gallery {
+      margin-bottom: .5rem;
+    .wrapperr {
+        display: flex;
+        .img-box {
+            margin-right: .5rem;
+            img {
+                width: 100%;
+            }
+        }
+
+      }
+
+    .ulone {
+        transform: translate(100%, 0px)
+    }
+    .ultwo {
+        transform: translate(-100%, 0px)
+    }
+    .ulthree {
+        transform: translate(100%, 0px)
+    }
+    .ulfour {
+        transform: translate(-100%, 0px)
+    }
+  }
+}
