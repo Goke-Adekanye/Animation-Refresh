@@ -27,6 +27,12 @@ const Header = ({ history }) => {
   }, [history]);
 
   useEffect(() => {
+    if (state.menuName === "Menu") {
+      document.body.classList.remove("hide-scrolling");
+    }
+  }, [state.menuName]);
+
+  useEffect(() => {
     //stagger header content
     staggerHeader(logo, menu);
   }, []);
@@ -40,16 +46,19 @@ const Header = ({ history }) => {
         clicked: true,
         menuName: "Close",
       });
+      document.body.classList.add("hide-scrolling");
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
         menuName: "Menu",
       });
+      document.body.classList.remove("hide-scrolling");
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
         menuName: "Close",
       });
+      document.body.classList.add("hide-scrolling");
     }
   };
 
