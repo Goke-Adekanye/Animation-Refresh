@@ -231,6 +231,10 @@ footer {
                     p {
                         margin: 0;
                         margin-bottom: 2px;
+                        @media only screen and (max-width: 457px) {
+                            // width: 100%;
+                            margin-bottom: 5px;
+                        }
                     }
                   }
               }
