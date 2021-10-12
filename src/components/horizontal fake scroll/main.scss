@@ -13,10 +13,20 @@
 
   .demo-text {
     .text {
-        font-size: clamp(8rem, 15vw, 16rem);
+        // font-size: clamp(8rem, 15vw, 16rem);
+        font-size: 200px;
         line-height: 1;
         font-weight: 900;
         color: #FFFFFF;
+        @media (max-width: 1024px) {
+          font-size: 150px;
+        }
+        @media (max-width: 767px) {
+          font-size: 100px;
+        }
+        @media (max-width: 550px) {
+          font-size: 80px;
+        }
       }
     .textone {
         transform: translate(-3669px, 0px)

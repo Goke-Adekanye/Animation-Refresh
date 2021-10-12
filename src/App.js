@@ -7,22 +7,21 @@ import Loader from "./components/loader";
 import Footer from "./components/footer";
 
 const Home = lazy(() => import("./pages/home"));
+const About = lazy(() => import("./pages/about"));
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
-        <div className="container">
-          <div className="wrapper">
-            <Suspense fallback={<Loader />}>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/discover" component={Solutions} />
-                <Route exact path="/contact-us" component={Contact} />
-              </Switch>
-            </Suspense>
-          </div>
-        </div>
+
+        <Suspense fallback={<Loader />}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/discover" component={Solutions} />
+            <Route exact path="/about" component={About} />
+          </Switch>
+        </Suspense>
+
         <Footer />
       </div>
     </Router>
@@ -31,10 +30,6 @@ function App() {
 
 function Solutions() {
   return <p>Solutions that help you.</p>;
-}
-
-function Contact() {
-  return <p>Feel free to reach us.</p>;
 }
 
 export default App;

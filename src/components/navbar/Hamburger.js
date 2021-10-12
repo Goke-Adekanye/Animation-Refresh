@@ -105,9 +105,9 @@ const Hamburger = ({ state }) => {
                       onMouseEnter={(e) => handleHover(e)}
                       onMouseOut={(e) => handleHoverExit(e)}
                       ref={(el) => (line3 = el)}
-                      to="/contact-us"
+                      to="/about"
                     >
-                      Contact us
+                      About us
                     </Link>
                   </li>
                 </ul>

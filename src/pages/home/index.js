@@ -121,95 +121,100 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="homePage">
-      <div className="first panel">
-        <div class="text">
-          <div>
-            <p ref={(el) => (subtitle = el)} class="subtitle">
-              The Authority In
-            </p>
-            <h1 ref={(el) => (title = el)} class="title">
-              <span>
-                Fashion <br /> Culture
-              </span>
-            </h1>
-            <p ref={(el) => (desc = el)} class="desc">
-              <b>HALIMRT.</b> is the cultural phenomenon surrounding <br />{" "}
-              Beauty and Fashion culture.
-            </p>
-            <Link ref={(el) => (readmore = el)} to="/" class="readmore">
-              Click For More
+    <div className="container">
+      <div className="wrapper">
+        <section className="homePage">
+          <div className="first panel">
+            <div class="text">
+              <div>
+                <p ref={(el) => (subtitle = el)} class="subtitle">
+                  The Authority In
+                </p>
+                <h1 ref={(el) => (title = el)} class="title">
+                  <span>
+                    Fashion <br /> Culture
+                  </span>
+                </h1>
+                <p ref={(el) => (desc = el)} class="desc">
+                  <b>HALIMRT.</b> is the cultural phenomenon surrounding <br />{" "}
+                  Beauty and Fashion culture.
+                </p>
+                <Link ref={(el) => (readmore = el)} to="/" class="readmore">
+                  Click For More
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="second panel">
+            <div className="div-vid">
+              <video autoplay="autoplay" muted loop>
+                <source src={vid} type="video/mp4" />
+              </video>
+            </div>
+            <div className="div-desc">
+              <h2>Experience Halimrt. The new Classic Luxury.</h2>
+              <p>
+                We’ve heard the story: if you want to be successful, you have to
+                leave your comfort zone. Until now. <br /> <br /> Because
+                Halimrt invites you to do the opposite: see what luxury feels
+                like. Redefining what fashion can be. But not only that. It’s a
+                global campaign that helps change the brand’s positioning from
+                premium to luxury. Even if that means stepping out of our own
+                comfort zone
+              </p>
+            </div>
+          </div>
+
+          <div className="third panel">
+            <Link to="/" className="left-pane">
+              <div className="div">
+                <h1>NEW IN AND RESTOCKS</h1>
+                <p>
+                  Discover our mid-week arrivals and most-wanted, most-loved
+                  restocks.
+                </p>
+              </div>
             </Link>
+            <div className="right-pane">
+              <div className="stack stack-div1">
+                <h1>ORIGINALS</h1>
+              </div>
+              <div className="stack stack-div2">
+                <h1>100% COTTON</h1>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div className="second panel">
-        <div className="div-vid">
-          <video autoplay="autoplay" muted loop>
-            <source src={vid} type="video/mp4" />
-          </video>
-        </div>
-        <div className="div-desc">
-          <h2>Experience Halimrt. The new Classic Luxury.</h2>
-          <p>
-            We’ve heard the story: if you want to be successful, you have to
-            leave your comfort zone. Until now. <br /> <br /> Because Halimrt
-            invites you to do the opposite: see what luxury feels like.
-            Redefining what fashion can be. But not only that. It’s a global
-            campaign that helps change the brand’s positioning from premium to
-            luxury. Even if that means stepping out of our own comfort zone
-          </p>
-        </div>
-      </div>
+          <div className="fifth panel">
+            <Glitch />
+          </div>
 
-      <div className="third panel">
-        <Link to="/" className="left-pane">
-          <div className="div">
-            <h1>NEW IN AND RESTOCKS</h1>
-            <p>
-              Discover our mid-week arrivals and most-wanted, most-loved
-              restocks.
-            </p>
+          <div className="">
+            <HFS />
           </div>
-        </Link>
-        <div className="right-pane">
-          <div className="stack stack-div1">
-            <h1>ORIGINALS</h1>
-          </div>
-          <div className="stack stack-div2">
-            <h1>100% COTTON</h1>
-          </div>
-        </div>
-      </div>
 
-      <div className="fifth panel">
-        <Glitch />
-      </div>
-
-      <div className="">
-        <HFS />
-      </div>
-
-      <div className="fourth panel">
-        <div className="top">
-          <h1>HALIMRT.</h1>
-        </div>
-        <div className="down">
-          <div ref={(el) => (service1 = el)} className="avail-services">
-            <h4>FREE DELIVERY</h4>
-            <p>for orders over $200 to to the US, Canada and Australia</p>
+          <div className="fourth panel">
+            <div className="top">
+              <h1>HALIMRT.</h1>
+            </div>
+            <div className="down">
+              <div ref={(el) => (service1 = el)} className="avail-services">
+                <h4>FREE DELIVERY</h4>
+                <p>for orders over $200 to to the US, Canada and Australia</p>
+              </div>
+              <div ref={(el) => (service2 = el)} className="avail-services">
+                <h4>FREE RETURNS</h4>
+                <p>from the US, Canada and Australia</p>
+              </div>
+              <div ref={(el) => (service3 = el)} className="avail-services">
+                <h4>SECURE PAYMENT</h4>
+                <p>Visa, Mastercard, Amex, Paypal, Paystack, Discover</p>
+              </div>
+            </div>
           </div>
-          <div ref={(el) => (service2 = el)} className="avail-services">
-            <h4>FREE RETURNS</h4>
-            <p>from the US, Canada and Australia</p>
-          </div>
-          <div ref={(el) => (service3 = el)} className="avail-services">
-            <h4>SECURE PAYMENT</h4>
-            <p>Visa, Mastercard, Amex, Paypal, Paystack, Discover</p>
-          </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
   );
 }

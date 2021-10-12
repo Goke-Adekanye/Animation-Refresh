@@ -256,7 +256,6 @@ header {
     justify-content: center;
     height: 100vh;
     background: url('./images/01.jpg') center center;
-    background-color: rgba(0,0,0,.5) !important;
     background-repeat: no-repeat;
     animation-name: backgroundEffect;
     animation-duration: 30s;
@@ -648,6 +647,68 @@ header {
 }
 
 //============================= END OF HOME PAGE =======================================
+
+//============================= ABOUT PAGE =======================================
+.aboutPage {
+  .parallax {
+    margin-top: -100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('./images/lingerie.jpg');
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      color: $txt-white;
+
+      h1 {
+        margin: 0;
+        margin-top: 3rem;
+        font-size: 200px;
+        @media (max-width: 1024px) {
+          font-size: 150px;
+        }
+        @media (max-width: 767px) {
+          font-size: 110px;
+        }
+        @media (max-width: 550px) {
+          margin-top: 5rem;
+          font-size: 80px;
+        }
+        @media (max-width: 407px) {
+          font-size: 60px;
+        }
+        @media (max-width: 320px) {
+          font-size: 40px;
+        }
+        @media (max-width: 289px) {
+          font-size: 35px;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        @media (max-width: 375px) {
+          text-align: center;
+          font-size: 1rem;
+        }
+      }
+    }
+
+  }
+
+  .second {
+    height: 100vh;
+  }
+}
+//============================= END OF ABOUT PAGE =======================================
 
 @keyframes backgroundEffect {
   0% {
