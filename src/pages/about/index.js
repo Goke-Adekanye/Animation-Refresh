@@ -31,7 +31,28 @@ export default function About() {
         </div>
       </div>
 
-      <div className="second"></div>
+      <div className="second">
+        <div className="container">
+          <div className="wrapper">
+            <div className="text-desc">
+              <h2>
+                <span>HALIMRT. is a full-service creative studio </span>
+                <span>working with fashion, tech & lifestyle brands. </span>
+                <span>We collaborate closely with our clients </span>
+                <span>to tell their stories, engaging audiences </span>
+                <span>by building beautiful experiences & products.</span>
+              </h2>
+
+              <h2 className="sec">
+                <span>We strongly believe every brand and project </span>
+                <span>is unique and should be tailor-made from </span>
+                <span>industry leaders to early stage companies. </span>
+                <span>We don’t do one size fits all.</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

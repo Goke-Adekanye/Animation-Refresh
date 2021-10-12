@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 $light: #fffbf4;
@@ -626,7 +627,6 @@ header {
         }
         h4 {
           font-size: 15px;
-          // font-family: 'Anton', sans-serif;
 
         }
         p {
@@ -655,10 +655,11 @@ header {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: url('./images/lingerie.jpg');
+    background: url('./images/about-img.jpg');
     background-position: 50% 0px;
     background-repeat: no-repeat;
     background-size: cover;
+    vertical-align: middle;
 
     .text {
       display: flex;
@@ -705,7 +706,53 @@ header {
   }
 
   .second {
-    height: 100vh;
+    .text-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1rem;
+      color: $txt-white;
+
+      h2 {
+        display: block;
+        span {
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        height: 200px;
+        line-height: 1.3;
+        overflow: hidden;
+        position: relative;
+
+        @media (max-width: 1024px) {
+          font-size: 2.8rem;
+        }
+        @media (max-width: 957px) {
+          font-size: 2.6rem;
+        }
+        @media (max-width: 898px) {
+          font-size: 2.4rem;
+          
+        }
+        @media (max-width: 834px) {
+          font-size: 2.2rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 2rem;
+        }
+        @media (max-width: 700px) {
+          font-size: 1.8rem;
+        }
+        @media (max-width: 640px) {
+          font-size: 1.5rem;
+        }
+        }
+        
+      }
+      h2.sec {
+        margin-top: 2rem;
+      }
+    }
   }
 }
 //============================= END OF ABOUT PAGE =======================================
