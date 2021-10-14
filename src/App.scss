@@ -760,9 +760,10 @@ header {
         width: 100%;
         overflow: hidden;
         @media (max-width: 520px) {
-        margin-left: -50px;
-        margin-right: -50px;
+        margin-left: -25px;
+        margin-right: -25px;
         width: auto;
+
           
         }
         .img1 {
@@ -774,6 +775,7 @@ header {
           transform: rotate(-4deg);
           margin-left: -3rem;
           margin-top: 6rem;
+          flex-shrink: 0;
           @media (max-width: 640px) {
             margin-left: -2rem;
           }
@@ -789,6 +791,8 @@ header {
           overflow: hidden;
           transform: rotate(3deg);
           margin-left: -5rem;
+          flex-shrink: 0;
+
           @media (max-width: 540px) {
             // margin-right: -8rem;
           }
