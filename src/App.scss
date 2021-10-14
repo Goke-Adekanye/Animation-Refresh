@@ -709,6 +709,7 @@ header {
     .text-desc {
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: flex-start;
       padding: 1rem;
       color: $txt-white;
@@ -749,6 +750,61 @@ header {
         }
         
       }
+
+      .about-imgs {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 2rem 0;
+        width: 100%;
+        overflow: hidden;
+        @media (max-width: 520px) {
+        margin-left: -50px;
+        margin-right: -50px;
+        width: auto;
+          
+        }
+        .img1 {
+          height: 60vh;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          overflow: hidden;
+          transform: rotate(-4deg);
+          margin-left: -3rem;
+          margin-top: 6rem;
+          @media (max-width: 640px) {
+            margin-left: -2rem;
+          }
+          @media (max-width: 415px) {
+            margin-left: 0rem;
+          }
+        }
+        .img2 {
+          height: 60vh;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          overflow: hidden;
+          transform: rotate(3deg);
+          margin-left: -5rem;
+          @media (max-width: 540px) {
+            // margin-right: -8rem;
+          }
+        }
+
+        img {
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+          opacity: 1;
+      }
+      }
+
       h2.sec {
         margin-top: 2rem;
       }

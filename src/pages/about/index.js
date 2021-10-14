@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Redcap from "../../images/about-redcap.jpg";
+import lingerie from "../../images/abt-lingerie.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,11 +26,11 @@ export default function About() {
       .timeline({
         scrollTrigger: {
           trigger: ".second",
-          start: "center bottom",
+          start: "top center",
         },
       })
       .from([node1, node2, node3, node4, node5, node6, node7, node8, node9], {
-        duration: 5,
+        duration: 1,
         opacity: 0,
         y: -100,
         delay: 0.1,
@@ -82,6 +84,15 @@ export default function About() {
                   by building beautiful experiences & products.
                 </span>
               </h2>
+
+              <div className="about-imgs">
+                <div className="img1">
+                  <img src={lingerie} alt="abt" />
+                </div>
+                <div className="img2">
+                  <img src={Redcap} alt="abt" />
+                </div>
+              </div>
 
               <h2 className="sec">
                 <span ref={(el) => (node6 = el)}>
