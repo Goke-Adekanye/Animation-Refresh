@@ -29,7 +29,33 @@ export default function About() {
           start: "top center",
         },
       })
-      .from([node1, node2, node3, node4, node5, node6, node7, node8, node9], {
+      .from([node1, node2, node3, node4, node5], {
+        duration: 1,
+        opacity: 0,
+        y: -100,
+        delay: 0.1,
+        ease: "Expo.easeInOut",
+        stagger: {
+          amount: 1,
+        },
+      })
+      .to("img", {
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%",
+        ease: "Expo.easeInOut",
+        duration: 1.5,
+        delay: 0.5,
+      });
+  }, []);
+
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "h2.sec",
+          start: "center bottom",
+        },
+      })
+      .from([node6, node7, node8, node9], {
         duration: 1,
         opacity: 0,
         y: -100,
