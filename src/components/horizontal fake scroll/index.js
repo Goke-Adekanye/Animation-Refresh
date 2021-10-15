@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function HFS() {
   useEffect(() => {
     gsap.utils.toArray("section").forEach((section, index) => {
-      const w = section.querySelector(".wrapper");
+      const w = section.querySelector(".wrapperr");
       const [x, xEnd] =
         index % 2
           ? ["100%", (w.scrollWidth - section.offsetWidth) * -1]
@@ -31,11 +31,11 @@ export default function HFS() {
   return (
     <div class="demo-wrapper">
       <section class="demo-text">
-        <div class="wrapper text textone">CLASSICFASHIONNLUXURY</div>
+        <div class="wrapperr text textone">CLASSICFASHIONNLUXURY</div>
       </section>
 
       <section class="demo-gallery">
-        <ul class="wrapper ulone">
+        <ul class="wrapperr ulone">
           <li>
             <img alt="fake" src={girl} />
           </li>
@@ -48,7 +48,7 @@ export default function HFS() {
         </ul>
       </section>
       <section class="demo-gallery">
-        <ul class="wrapper ultwo">
+        <ul class="wrapperr ultwo">
           <li>
             <img alt="fake" src={girl} />
           </li>
@@ -65,7 +65,7 @@ export default function HFS() {
       </section>
 
       <section class="demo-text">
-        <div class="wrapper text texttwo">CLASSICFASHIONNLUXURY</div>
+        <div class="wrapperr text texttwo">CLASSICFASHIONNLUXURY</div>
       </section>
     </div>
   );

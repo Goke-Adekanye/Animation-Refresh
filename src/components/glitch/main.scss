@@ -11,6 +11,9 @@ $light: #fffbf4;
   	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
+	animation-name: backgroundEffect;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 }
 
 .c-glitch {
@@ -62,6 +65,24 @@ $light: #fffbf4;
 .c-glitch__img:nth-child(n+2) {
 	opacity: 0;
 }
+
+@keyframes backgroundEffect {
+	0% {
+	  background-position: 0% 0%;
+	}
+	25% {
+	  background-position: 40% 10%;
+	}
+	50% {
+	  background-position: 0 10%;
+	}
+	75% {
+	  background-position: 10% 40%;
+	}
+	100% {
+	  background-position: 0% 0%;
+	}
+  }
 
 @keyframes glitch-anim-1 {
 	0%, 100% { 

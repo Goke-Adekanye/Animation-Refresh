@@ -121,51 +121,36 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container">
-      <div className="wrapper">
-        <section className="homePage">
-          <div className="first panel">
-            <div class="text">
-              <div>
-                <p ref={(el) => (subtitle = el)} class="subtitle">
-                  The Authority In
-                </p>
-                <h1 ref={(el) => (title = el)} class="title">
-                  <span>
-                    Fashion <br /> Culture
-                  </span>
-                </h1>
-                <p ref={(el) => (desc = el)} class="desc">
-                  <b>HALIMRT.</b> is the cultural phenomenon surrounding <br />{" "}
-                  Beauty and Fashion culture.
-                </p>
-                <Link ref={(el) => (readmore = el)} to="/" class="readmore">
-                  Click For More
-                </Link>
-              </div>
-            </div>
+    <section className="homePage">
+      <div className="first panel">
+        <video autoplay="autoplay" muted loop>
+          <source src={vid} type="video/mp4" />
+        </video>
+        <div class="text">
+          <div>
+            <p ref={(el) => (subtitle = el)} class="subtitle">
+              The Authority In
+            </p>
+            <h1 ref={(el) => (title = el)} class="title">
+              <span>
+                Fashion <br /> Culture
+              </span>
+            </h1>
+            <p ref={(el) => (desc = el)} class="desc">
+              <b>HALIMRT.</b> is the cultural phenomenon surrounding <br />{" "}
+              Beauty and Fashion culture.
+            </p>
+            <Link ref={(el) => (readmore = el)} to="/" class="readmore">
+              Click For More
+            </Link>
           </div>
+        </div>
+      </div>
 
-          <div className="second panel">
-            <div className="div-vid">
-              <video autoplay="autoplay" muted loop>
-                <source src={vid} type="video/mp4" />
-              </video>
-            </div>
-            <div className="div-desc">
-              <h2>Experience Halimrt. The new Classic Luxury.</h2>
-              <p>
-                We’ve heard the story: if you want to be successful, you have to
-                leave your comfort zone. Until now. <br /> <br /> Because
-                Halimrt invites you to do the opposite: see what luxury feels
-                like. Redefining what fashion can be. But not only that. It’s a
-                global campaign that helps change the brand’s positioning from
-                premium to luxury. Even if that means stepping out of our own
-                comfort zone
-              </p>
-            </div>
-          </div>
+      <div className="second panel"></div>
 
+      <div className="container">
+        <div className="wrapper">
           <div className="third panel">
             <Link to="/" className="left-pane">
               <div className="div">
@@ -185,15 +170,23 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div className="container">
+        <div className="wrapper">
           <div className="fifth panel">
             <Glitch />
           </div>
+        </div>
+      </div>
 
-          <div className="">
-            <HFS />
-          </div>
+      <div className="">
+        <HFS />
+      </div>
 
+      <div className="container">
+        <div className="wrapper">
           <div className="fourth panel">
             <div className="top">
               <h1>HALIMRT.</h1>
@@ -213,8 +206,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

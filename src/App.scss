@@ -252,17 +252,21 @@ header {
 //============================= HOME PAGE =======================================
 .homePage {
   .first {
+    margin: -100px 0 1rem;
+    height: calc(100vh + 100px);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: url('./images/01.jpg') center center;
-    background-repeat: no-repeat;
-    animation-name: backgroundEffect;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    @media (max-width: 767px) {
-      background-size: cover;
+    position: relative;
+    video {
+      top: 0;
+      left: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+      z-index: 1;
     }
     .text {
       display: flex;
@@ -270,6 +274,7 @@ header {
       justify-content: center;
       width: 70%;
       color: $txt-white;
+      z-index: 2;
       @media (max-width: 300px) {
         width: 90%;
       }
@@ -288,6 +293,7 @@ header {
         transform: translateY(-4px);
       }
       .title {
+        display: flex;
         margin: 0 !important;
         font-size: 120px;
         text-transform: uppercase;
@@ -333,106 +339,12 @@ header {
       }
     }
   }
+
   .second {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    background: $bg-black;
-    @media (max-width: 767px) {
-      flex-direction: column;
-      justify-content: center;
-      padding: 1rem 0;
-
-    }
-    .div-vid {
-      width: 50%;
-      height: 80vh;
-      padding: 0;
-      @media (max-width: 767px) {
-        width: 100%;
-        height: 50vh;
-        margin-bottom: 1rem;
-      }
-      @media (max-width: 330px) {
-        height: 45vh;
-      }
-      @media (max-width: 253px) {
-        height: 40vh;
-      }
-      @media (max-width: 227px) {
-        height: 30vh;
-      }
-      video {
-        width: 100%;
-        height: 100%;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        @media (max-width: 767px) {
-          object-fit: cover;
-          object-position: center;
-        }
-      }
-    }
-    .div-desc {
-      width: 50%;
-      height: 80vh;
-      padding: 0 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      @media (max-width: 767px) {
-       width: 100%;
-       height: 45vh;
-       padding: 0;
-      }
-      @media (max-width: 330px) {
-        height: 50vh;
-      }
-      @media (max-width: 253px) {
-        height: 55vh;
-      }
-      @media (max-width: 227px) {
-        height: 65vh;
-      }
-      h2 {
-        font-size: 30px;
-        font-family: 'Anton', sans-serif;
-        line-height: 1.2;
-        letter-spacing: 0.01em;
-        font-weight: bold;
-        color: $txt-white;
-
-        @media (max-width: 767px) {
-          margin: 0;
-          font-size: 25px;
-        }
-        @media (max-width: 450px) {
-          font-size: 20px;
-        }
-        @media (max-width: 380px) {
-          font-size: 17px;
-        }
-      }
-      p {
-        color: $txt-white;
-        font-size: 15px;
-        // font-family: 'Libre Baskerville', serif;
-        font-weight: 500;
-        line-height: 1.67;
-        letter-spacing: 0.01em;
-        @media (max-width: 767px) {
-          font-size: 13px;
-          margin-top: 2rem;
-          line-height: 1.7;
-        }
-        @media (max-width: 380px) {
-          margin-top: 1rem;
-        }
-        @media (max-width: 330px) {
-          line-height: 1.5;
-        }
-      }
-    }
   }
+
+
   .third {
     height: 100vh;
     display: flex;
@@ -527,7 +439,7 @@ header {
       background-size: cover;
       }
       .stack-div2 {
-      background: url('./images/lingerie.jpg') center center;
+      background: url('./images/01.jpg') center center;
       background-size: cover;
       
       }
@@ -817,24 +729,4 @@ header {
   }
 }
 //============================= END OF ABOUT PAGE =======================================
-
-@keyframes backgroundEffect {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 40% 10%;
-  }
-  50% {
-    background-position: 0 10%;
-  }
-  75% {
-    background-position: 10% 40%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-//============================================
 
