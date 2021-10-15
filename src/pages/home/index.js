@@ -147,7 +147,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="second panel"></div>
+      <div className="second panel">
+        <div className="text">
+          <p>
+            Halimrt. is a full-service creative studio crafting beautiful
+            digital experiences & products.
+          </p>
+          <p className="abt">
+            <Link to="./about">ABOUT US</Link>
+          </p>
+        </div>
+      </div>
 
       <div className="container">
         <div className="wrapper">
