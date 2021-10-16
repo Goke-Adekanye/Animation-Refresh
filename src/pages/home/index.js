@@ -164,7 +164,7 @@ export default function Home() {
           <div className="third panel">
             <Link to="/" className="left-pane">
               <div className="div">
-                <h1>NEW IN AND RESTOCKS</h1>
+                <h1>New In And Restocks</h1>
                 <p>
                   Discover our mid-week arrivals and most-wanted, most-loved
                   restocks.
@@ -173,10 +173,10 @@ export default function Home() {
             </Link>
             <div className="right-pane">
               <div className="stack stack-div1">
-                <h1>ORIGINALS</h1>
+                <h1>Originals</h1>
               </div>
               <div className="stack stack-div2">
-                <h1>100% COTTON</h1>
+                <h1>100% Cotton</h1>
               </div>
             </div>
           </div>

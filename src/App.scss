@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Sacramento');
 
 $light: #fffbf4;
 $deep: #f3eee8;
@@ -55,6 +56,10 @@ body.hide-scrolling {
 
 header {
   height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
   .inner-header {
     position: relative;
     z-index: 10;
@@ -344,6 +349,7 @@ header {
     height: 100vh;
     padding: 4rem 8rem 0;
     color: $txt-white;
+    
   
     @media (max-width: 840px) {
       padding: 3rem 4rem 0;
@@ -357,6 +363,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      
       p {
         font-size: 4rem;
         @media (max-width: 1024px) {
@@ -427,6 +434,10 @@ header {
 
       h1 {
         font-size: 40px;
+        font-family: 'Sacramento', cursive;
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        position: relative;
+        animation: animate 2s ease-in-out infinite;
         @media (max-width: 280px) {
           font-size: 30px;
         }
@@ -436,6 +447,9 @@ header {
         font-weight: 500;
         letter-spacing: 0.3rem;
         line-height: 2;
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        position: relative;
+        animation: animate 2s ease-in-out infinite;
       }
     }
     }
@@ -476,8 +490,13 @@ header {
         }
         h1 {
           font-size: 40px;
+          font-family: 'Sacramento', cursive;
+          text-transform: capitalize;
           letter-spacing: 0.3rem;
           color: $txt-white;
+          text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+          position: relative;
+          animation: animate 2s ease-in-out infinite;
         }
       }
       .stack-div1 {
@@ -607,6 +626,16 @@ header {
 
 //============================= END OF HOME PAGE =======================================
 
+@keyframes animate{
+  20%, 24%, 55%{
+      color: $txt-white;
+      text-shadow: none;
+  }
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%{
+      color: #fff6a9;
+      text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  }
+}
 //============================= ABOUT PAGE =======================================
 .aboutPage {
   .parallax {

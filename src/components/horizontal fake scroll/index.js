@@ -31,7 +31,7 @@ export default function HFS() {
   return (
     <div class="demo-wrapper">
       <section class="demo-text">
-        <div class="wrapperr text textone">CLASSICFASHIONNLUXURY</div>
+        <div class="wrapperr text textone">ClassicFashionLuxury</div>
       </section>
 
       <section class="demo-gallery">
@@ -65,7 +65,7 @@ export default function HFS() {
       </section>
 
       <section class="demo-text">
-        <div class="wrapperr text texttwo">CLASSICFASHIONNLUXURY</div>
+        <div class="wrapperr text texttwo">ClassicFashionLuxury</div>
       </section>
     </div>
   );
