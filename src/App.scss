@@ -439,7 +439,7 @@ header {
         position: relative;
         animation: animate 2s ease-in-out infinite;
         @media (max-width: 1234px) {
-          // text-shadow: none;
+          text-shadow: none;
           animation: none;
         }
         @media (max-width: 280px) {
@@ -455,7 +455,7 @@ header {
         position: relative;
         animation: animate 2s ease-in-out infinite;
         @media (max-width: 1234px) {
-          // text-shadow: none;
+          text-shadow: none;
           animation: none;
         }
       }
