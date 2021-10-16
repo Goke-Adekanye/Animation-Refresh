@@ -427,6 +427,17 @@ header {
    
       &:hover {
         background-color: rgba(0,0,0,.5);
+
+        .div h1,
+        .div p {
+          text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+          position: relative;
+          animation: animate 2s ease-in-out infinite;
+          // @media (max-width: 1234px) {
+          //   text-shadow: none;
+          //   animation: none;
+          // }
+        }
       }
     .div {
       text-align: center;
@@ -435,29 +446,17 @@ header {
       h1 {
         font-size: 40px;
         font-family: 'Sacramento', cursive;
-        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-        position: relative;
-        animation: animate 2s ease-in-out infinite;
-        @media (max-width: 1234px) {
-          text-shadow: none;
-          animation: none;
-        }
         @media (max-width: 280px) {
           font-size: 30px;
         }
       }
+
       p {
         margin: 0 0 1rem;
         font-weight: 500;
         letter-spacing: 0.3rem;
         line-height: 2;
-        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-        position: relative;
-        animation: animate 2s ease-in-out infinite;
-        @media (max-width: 1234px) {
-          text-shadow: none;
-          animation: none;
-        }
+     
       }
     }
     }
@@ -495,6 +494,12 @@ header {
         
         &:hover {
         background-color: rgba(0,0,0,.5);
+
+        h1 {
+          text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+          position: relative;
+          animation: animate 2s ease-in-out infinite;
+        }
         }
         h1 {
           font-size: 40px;
@@ -502,9 +507,6 @@ header {
           text-transform: capitalize;
           letter-spacing: 0.3rem;
           color: $txt-white;
-          text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-          position: relative;
-          animation: animate 2s ease-in-out infinite;
         }
       }
       .stack-div1 {
@@ -634,16 +636,16 @@ header {
 
 //============================= END OF HOME PAGE =======================================
 
-@keyframes animate{
-  20%, 24%, 55%{
-      color: $txt-white;
-      text-shadow: none;
-  }
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%{
-      color: #fff6a9;
-      text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-  }
-}
+// @keyframes animate{
+//   20%, 24%, 55%{
+//       color: $txt-white;
+//       text-shadow: none;
+//   }
+//   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%{
+//       color: #fff6a9;
+//       text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+//   }
+// }
 //============================= ABOUT PAGE =======================================
 .aboutPage {
   .parallax {
