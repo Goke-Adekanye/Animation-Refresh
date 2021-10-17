@@ -7,6 +7,7 @@ import Loader from "./components/loader";
 import Footer from "./components/footer";
 
 const Home = lazy(() => import("./pages/home"));
+const Discover = lazy(() => import("./pages/discover"));
 const About = lazy(() => import("./pages/about"));
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Suspense fallback={<Loader />}>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/discover" component={Solutions} />
+            <Route exact path="/discover" component={Discover} />
             <Route exact path="/about" component={About} />
           </Switch>
         </Suspense>
@@ -26,10 +27,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-function Solutions() {
-  return <p>Solutions that help you.</p>;
 }
 
 export default App;
