@@ -651,24 +651,41 @@ header {
 .protfoliopage {
   padding: 46px 0;
   overflow: hidden;
+  @media(min-width:991px){
+    
+    max-width: 1250px;
+    margin: 0 auto;
+    }
+  
   img {
     max-width: 100%;
   }
   .portfolio_cls {
     margin-top: 150px;
-    margin-left: -10px;
-    margin-right: -10px;
+    // margin-left: -10px;
+    margin-right: -15px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-
+    @media(min-width:991px){
+    
+    margin-right: 0;
+      }
     .portfolio_grid {
       padding: 5px 5px;
       flex: 0 0 47%;
       max-width: 47%;
+      @media(min-width:640px){
+        flex: 0 0 23%;
+        max-width: 23%;
+        }
+        @media (min-width: 1000px){
+        padding: 10px 10px;
+        }
       .portfolio_gridinr {
         position: relative;
         overflow: hidden;
+        &:hover img.abs_img{transform: scale(1.05);-webkit-transform: scale(1.05);-moz-transform: scale(1.05);-o-transform: scale(1.05);-ms-transform: scale(1.05);}
 
         a {
           position: relative;
@@ -687,16 +704,17 @@ header {
             bottom: 0;
             object-fit: cover;
             object-position: center;
+            transition: all .7s ease-in-out;-webkit-transition: all .7s ease-in-out;-moz-transition: all .7s ease-in-out;-o-transition: all .7s ease-in-out;
         }
-        @media(min-width:768px){
+        @media(min-width:640px){
           .abs_img.mobile_img {display:none;}
           }
-            @media(max-width:767px){
+            @media(max-width:640px){
           .abs_img.desktop_img {display:none;}
           }
 
         .portfolio-logo {
-  
+          
           left: 30px;
           right: 30px;
           bottom: 15px;
@@ -715,7 +733,58 @@ header {
   }
   .portfolio_grid:nth-child(odd):not(:first-child) {
     margin-top: -180px;
+    @media(min-width:640px){
+      margin-top: -150px;
+      }
   }
+  @media(min-width:640px){
+  .portfolio_grid:nth-child(2), .portfolio_grid:nth-child(4) {
+    margin-top: -150px;
+  }
+  .portfolio_grid:nth-child(5) {
+    margin-top: -25px !important;
+  }
+  .portfolio_grid:nth-child(7) {
+    margin-top: 0px !important;
+  }
+  .portfolio_grid:nth-child(6), .portfolio_grid:nth-child(8) {
+    margin-top: -63px !important;
+  }
+    }
+  @media(min-width:768px){
+  .portfolio_grid:nth-child(5) {
+    margin-top: -27px !important;
+  }
+  .portfolio_grid:nth-child(6), .portfolio_grid:nth-child(8) {
+    margin-top: -70px !important;
+  }
+    }
+  @media(min-width:814px){
+  .portfolio_grid:nth-child(5) {
+    margin-top: -30px !important;
+  }
+  .portfolio_grid:nth-child(6), .portfolio_grid:nth-child(8) {
+    margin-top: -77px !important;
+  }
+    }
+
+  @media(min-width:900px){
+  .portfolio_grid:nth-child(5) {
+    margin-top: -30px !important;
+  }
+  .portfolio_grid:nth-child(6), .portfolio_grid:nth-child(8) {
+    margin-top: -90px !important;
+  }
+    }
+    @media(min-width:1000px){
+      .portfolio_grid:nth-child(5) {
+        margin-top: -40px !important;
+      }
+      .portfolio_grid:nth-child(6), .portfolio_grid:nth-child(8) {
+        margin-top: -110px !important;
+      }
+        }
+  
   .portfolio_grid:nth-child(1) {
     margin-top: -150px;
   }
