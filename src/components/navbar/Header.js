@@ -76,7 +76,7 @@ const Header = ({ history }) => {
         <div className="wrapper">
           <div className="inner-header">
             <div ref={(el) => (logo = el)} className="logo">
-              <Link to="/">HALIMRT.</Link>
+              <Link to="/">HALIMA.</Link>
             </div>
             <div ref={(el) => (menu = el)} className="menu">
               <button onClick={handleMenu} disabled={disabled}>

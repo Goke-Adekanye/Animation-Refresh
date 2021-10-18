@@ -4,7 +4,7 @@ import Header from "./components/navbar/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Suspense } from "react";
 import Loader from "./components/loader";
-import Footer from "./components/footer";
+// import Footer from "./components/footer";
 
 const Home = lazy(() => import("./pages/home"));
 const Discover = lazy(() => import("./pages/discover"));
@@ -22,8 +22,6 @@ function App() {
             <Route exact path="/about" component={About} />
           </Switch>
         </Suspense>
-
-        <Footer />
       </div>
     </Router>
   );
