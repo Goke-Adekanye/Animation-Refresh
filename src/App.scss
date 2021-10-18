@@ -655,7 +655,7 @@ header {
     max-width: 100%;
   }
   .portfolio_cls {
-    margin-top: 190px;
+    margin-top: 150px;
     margin-left: -10px;
     margin-right: -10px;
     display: flex;
@@ -709,12 +709,15 @@ header {
       }
         }
       }
-      .portfolio_grid a, .portfolio_grid:nth-child(8n+1) .portfolio_gridinr a, .portfolio_grid:nth-child(8n+3) .portfolio_gridinr a, .portfolio_grid:nth-child(8n+6) .portfolio_gridinr a, .portfolio_grid:nth-child(8n+8) .portfolio_gridinr a {
-        padding-bottom: 165%;
-    }
+    //   .portfolio_grid a, .portfolio_grid:nth-child(8n+1) .portfolio_gridinr a, .portfolio_grid:nth-child(8n+3) .portfolio_gridinr a, .portfolio_grid:nth-child(8n+6) .portfolio_gridinr a, .portfolio_grid:nth-child(8n+8) .portfolio_gridinr a {
+    //     padding-bottom: 165%;
+    // }
   }
-  .portfolio_grid:nth-child(odd) {
-    margin-top: -190px;
+  .portfolio_grid:nth-child(odd):not(:first-child) {
+    margin-top: -180px;
+  }
+  .portfolio_grid:nth-child(1) {
+    margin-top: -150px;
   }
 }
 }
