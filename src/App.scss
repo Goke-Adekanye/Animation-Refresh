@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway|Sacramento');
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
 
 $light: #fffbf4;
 $deep: #f3eee8;
@@ -648,6 +650,45 @@ header {
 // }
 
 //============================= DISCOVER PAGE =======================================
+.discoverPage {
+  .disover-first {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 140px;
+    color: $txt-white;
+    @media (min-width: 640px){
+    padding: 140px 25px 42px;
+    }
+    .caption {
+      width: 100%;
+      max-width: 540px;
+      h1 {
+        margin-bottom: 20px;
+        margin-top: 0;
+        font-weight: 300;
+        font-family: 'Martel', serif;
+        letter-spacing: 0;
+        font-size: 20px;
+        line-height: 135%;
+        @media (min-width: 480px) {
+        font-size: 25px;
+        line-height: 140%;
+        }
+        span {
+          color: #B5D60D;
+        }
+      }
+  }
+  .small {
+    p {
+      font-size: 14px;
+      font-family: 'Martel', serif;
+      line-height: 19.6px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+  }
+  }
+
 .protfoliopage {
   padding: 46px 0;
   overflow: hidden;
@@ -852,6 +893,7 @@ header {
   @media (max-width: 640px){
     right: 20px;
     bottom: 15px;
+}
 }
 }
 }

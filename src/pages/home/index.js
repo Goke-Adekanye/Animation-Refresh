@@ -214,12 +214,12 @@ export default function Home() {
                 <div ref={(el) => (service1 = el)} className="avail-services">
                   <h4>FREE SHIPMENT</h4>
                   <p>
-                    for softwares over $2000 to to the US, Canada and Australia
+                    for softwares over $2000 to the US, Canada and Australia
                   </p>
                 </div>
                 <div ref={(el) => (service2 = el)} className="avail-services">
                   <h4>COLD UI/UX</h4>
-                  <p>from our US and Australia Designers</p>
+                  <p>from our Nigerian and Australian Designers</p>
                 </div>
                 <div ref={(el) => (service3 = el)} className="avail-services">
                   <h4>SECURE PAYMENT</h4>
