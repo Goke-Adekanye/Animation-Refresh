@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { textReveal, titleReveal } from "./Animations";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import vid from "../../images/live-fashion-show.mp4";
+// import vid from "../../images/live-fashion-show.mp4";
 import Glitch from "../../components/glitch";
 import HFS from "../../components/horizontal fake scroll";
 import Footer from "../../components/footer";
@@ -112,7 +112,10 @@ export default function Home() {
       <section className="homePage">
         <div className="first panel">
           <video autoplay="autoplay" muted loop>
-            <source src={vid} type="video/mp4" />
+            <source
+              src="https://cdn.shopify.com/s/files/1/0515/3633/0928/files/preview-02.mp4?v=1628514285"
+              type="video/mp4"
+            />
           </video>
           <div class="text">
             <div>

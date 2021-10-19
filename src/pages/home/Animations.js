@@ -9,7 +9,7 @@ export const textReveal = (node1, node2, node3) => {
     duration: 1,
     opacity: 0,
     x: -20,
-    ease: "Expo.easeInOut",
+    ease: "Power3.easeOut",
   });
 };
 
@@ -18,7 +18,7 @@ export const titleReveal = (node) => {
     delay: 0.4,
     duration: 1,
     width: "100%",
-    ease: "Expo.easeInOut",
+    ease: "Power3.easeOut",
   });
 };
 
