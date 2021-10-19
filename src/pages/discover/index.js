@@ -1,12 +1,44 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Footer from "../../components/footer";
 import portfolioData from "./portfolioData";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Discover() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    gsap.from(".disover-first", {
+      delay: 0.8,
+      duration: 1,
+      opacity: 0,
+      x: -20,
+      ease: "Expo.easeInOut",
+    });
+  }, []);
+
+  useEffect(() => {
+    const boxes = gsap.utils.toArray(".portfolio_grid");
+    boxes.forEach((box) => {
+      gsap.from(box, {
+        delay: 1,
+        duration: 2,
+        opacity: 0,
+        y: 50,
+        ease: "Expo.easeInOut",
+        scrollTrigger: {
+          trigger: box,
+          start: "center bottom",
+        },
+      });
+    });
+  }, []);
+
   return (
     <>
       <div className="discoverPage">

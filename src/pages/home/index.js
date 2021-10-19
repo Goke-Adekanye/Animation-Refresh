@@ -48,23 +48,6 @@ export default function Home() {
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: ".second",
-          start: "center bottom",
-        },
-      })
-      .to("video", {
-        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%",
-        ease: "Expo.easeInOut",
-        duration: 1.5,
-      })
-      .from(".div-desc h2", { translateY: -50, opacity: 0 })
-      .from(".div-desc p", { translateY: 50, opacity: 0 });
-  }, []);
-
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
           trigger: ".third",
           start: "center bottom",
         },

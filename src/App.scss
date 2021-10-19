@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway|Sacramento');
 @import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 $light: #fffbf4;
 $deep: #f3eee8;
@@ -682,7 +682,7 @@ header {
   .small {
     p {
       font-size: 14px;
-      font-family: 'Martel', serif;
+      font-family: 'Nunito', sans-serif;
       line-height: 19.6px;
       color: rgba(255, 255, 255, 0.75);
     }
