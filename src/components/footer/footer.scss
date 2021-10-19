@@ -24,6 +24,7 @@ footer {
             padding: 0 !important;
             border-top: 1px solid $deepBorder;
             background-color: $bg-black;
+            transition: all .7s ease-in-out;
 
             .bottom-container {
                 width: 100%;
