@@ -171,6 +171,11 @@ footer {
                                         display: inline-block;
                                         color: inherit;
                                         text-decoration: none;
+                                        transition: all .4s ease-in-out;
+
+                                        &:hover {
+                                           color: #B5D60D;
+                                        }
                                         &:hover::after {
                                             transform: scaleX(1);
                                             // transform-origin: right;
@@ -183,7 +188,7 @@ footer {
                                         height: 1px;
                                         width: 100%;
                                         position: absolute;
-                                        background: $txt-white;
+                                        background: #B5D60D;
                                         transform: scaleX(0);
                                         transition: transform .4s cubic-bezier(.77,0,.175,1);
                                         transform-origin: middle;
@@ -224,7 +229,7 @@ footer {
                       }
                   }
                   .lg-second {
-                    border-bottom: 1.5px solid $txt-white;
+                    border-bottom: 1.5px solid #B5D60D;
                     @media only screen and (max-width: 457px) {
                         // width: 100%;
                         margin-top: 1.5rem;
@@ -232,6 +237,7 @@ footer {
                     p {
                         margin: 0;
                         margin-bottom: 2px;
+                        color: #B5D60D;
                         @media only screen and (max-width: 457px) {
                             // width: 100%;
                             margin-bottom: 5px;

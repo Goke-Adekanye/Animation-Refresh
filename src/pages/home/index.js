@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import vid from "../../images/live-fashion-show.mp4";
 import Glitch from "../../components/glitch";
-import HFS from "../../components/horizontal fake scroll";
+// import HFS from "../../components/horizontal fake scroll";
 import Footer from "../../components/footer";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -159,19 +159,16 @@ export default function Home() {
             <div className="third panel">
               <Link to="/" className="left-pane">
                 <div className="div">
-                  <h1>New In And Restocks</h1>
-                  <p>
-                    Discover our mid-week arrivals and most-wanted, most-loved
-                    restocks.
-                  </p>
+                  <h1>Get Involved</h1>
+                  <p>Ready to take the next step to grow your brand?</p>
                 </div>
               </Link>
               <div className="right-pane">
                 <div className="stack stack-div1">
-                  <h1>Originals</h1>
+                  <h1>Branding</h1>
                 </div>
                 <div className="stack stack-div2">
-                  <h1>100% Cotton</h1>
+                  <h1>E-commerce</h1>
                 </div>
               </div>
             </div>
@@ -186,15 +183,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="">
+        {/* <div className="">
           <HFS />
-        </div>
+        </div> */}
 
         <div className="container">
           <div className="wrapper">
             <div className="fourth panel">
               <div className="top">
-                <h1>HALIMA.</h1>
+                <h1>
+                  HALI<span>MA.</span>
+                </h1>
               </div>
               <div className="down">
                 <div ref={(el) => (service1 = el)} className="avail-services">

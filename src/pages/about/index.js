@@ -86,7 +86,9 @@ export default function About() {
       <section className="aboutPage">
         <div className="parallax">
           <div className="text">
-            <h1>HALIMA.</h1>
+            <h1>
+              HALI<span>MA.</span>
+            </h1>
             <p>strategy, design & development</p>
           </div>
         </div>

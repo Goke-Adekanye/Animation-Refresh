@@ -75,6 +75,9 @@ header {
       font-size: 1rem;
       text-decoration: none;
       color: $txt-white;
+      span{
+        color: #B5D60D;
+      }
     }
     .logo a.textblack {
       color: $bg-black !important;
@@ -104,7 +107,8 @@ header {
     height: 100%;
     width: 100%;
     .menu-secondary-background-color {
-      background: $txt-white;
+      // background: $txt-white;
+      background: #B5D60D;
       top: 0;
       left: 0;
       right: 0;
@@ -191,8 +195,10 @@ header {
                   position: absolute;
                   color: $txt-white;
                   text-decoration: none;
+                  transition: all .4s ease-in-out;
+
                   &:hover {
-                    color: $deep2;
+                    color: #B5D60D;;
                   }
                 }
               }
@@ -290,11 +296,12 @@ header {
         text-transform: uppercase;
         font-size: 14px;
         font-weight: bold;
+        color: #B5D60D;
       }
       .subtitle::before {
         display: inline-block;
         content: "";
-        border: 2px solid #fff;
+        border: 2px solid #B5D60D;
         width: 80px;
         margin: 0 10px 0 0;
         transform: translateY(-4px);
@@ -327,6 +334,9 @@ header {
         margin: 0;
         letter-spacing: 0.3rem;
         line-height: 2;
+        b {
+          color: #B5D60D;
+        }
         @media (max-width: 640px) {
           margin-top: 30px;
         }
@@ -338,11 +348,16 @@ header {
         display: inline-block;
         margin-top: 20px;
         color: $txt-white;
-        border-bottom: 1px solid $txt-white;
+        border-bottom: 2px solid $txt-white;
         text-decoration: none;
         text-transform: uppercase;
         padding-bottom: 3px;
         font-weight: bolder;
+        transition: all .4s ease-in-out;
+        &:hover {
+          color: #B5D60D;
+          border-bottom: 2px solid #B5D60D;
+        }
       }
     }
   }
@@ -396,13 +411,18 @@ header {
         a {
           color: inherit;
           text-decoration: none;
+          transition: all .4s ease-in-out;
+          &:hover {
+            color: #B5D60D;
+
+          }
         }
       }
     }
   }
 
   .third {
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     background: $bg-black;
     @media (max-width: 900px) {
@@ -432,7 +452,7 @@ header {
 
         .div h1,
         .div p {
-          text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+          text-shadow: 0 0 5px #B5D60D, 0 0 15px #B5D60D, 0 0 20px #B5D60D, 0 0 40px #B5D60D, 0 0 60px #ff0000, 0 0 10px #B5D60D, 0 0 98px #ff0000;
           position: relative;
           animation: animate 2s ease-in-out infinite;
           // @media (max-width: 1234px) {
@@ -469,7 +489,7 @@ header {
       content: ' ';
     }
     .right-pane {
-      height: 100vh;
+      height: 140vh;
       width: 40%;
       display: flex;
       flex-direction: column;
@@ -487,7 +507,7 @@ header {
       }
       .stack {
           position: relative;
-          height: 50vh;
+          height: 70vh;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -498,7 +518,7 @@ header {
         background-color: rgba(0,0,0,.5);
 
         h1 {
-          text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+          text-shadow: 0 0 5px #B5D60D, 0 0 15px #B5D60D, 0 0 20px #B5D60D, 0 0 40px #B5D60D, 0 0 60px #ff0000, 0 0 10px #B5D60D, 0 0 98px #ff0000;
           position: relative;
           animation: animate 2s ease-in-out infinite;
         }
@@ -517,7 +537,7 @@ header {
       background-size: cover;
       }
       .stack-div2 {
-      background: url('./images/01.jpg') center center;
+      background: url('./images/cap.jpg') center center;
       background-size: cover;
       
       }
@@ -553,6 +573,9 @@ header {
         margin: 0;
         font-size: 200px;
         color: $txt-white;
+        span {
+          color: #B5D60D;
+        }
 
         @media (max-width: 1024px) {
           font-size: 150px;
@@ -857,7 +880,7 @@ header {
       span {
         width: 16px;
         height: 1px;
-        background: $txt-white;
+        background: #B5D60D;
         display: inline-block;
         vertical-align: middle;
         position: relative;
@@ -867,7 +890,7 @@ header {
       position: absolute;
       width: 7px;
       height: 7px;
-      border: 1px solid $txt-white;
+      border: 1px solid #B5D60D;
       border-left: 0;
       border-top: 0;
       transform: rotate(-45deg);
@@ -884,8 +907,8 @@ header {
     font-size: 14px;
     line-height: 140%;
     border-radius: 100px;
-    border: 1px solid $txt-white;
-    color: $txt-white;
+    border: 1px solid #B5D60D;
+    color: #B5D60D;
     padding: 10px 25px;
     background: $bg-black;
     display: inline-block;
@@ -923,6 +946,9 @@ header {
         margin: 0;
         margin-top: 3rem;
         font-size: 200px;
+        span {
+          color: #B5D60D;
+        }
         @media (max-width: 1024px) {
           font-size: 150px;
         }
