@@ -12,7 +12,7 @@ const Header = ({ history }) => {
   const [state, setState] = useState({
     initial: false,
     clicked: null,
-    menuName: "Menu",
+    menuName: "MENU",
   });
 
   // State of our button
@@ -22,12 +22,12 @@ const Header = ({ history }) => {
   useEffect(() => {
     //Listening for page changes.
     history.listen(() => {
-      setState({ clicked: false, menuName: "Menu" });
+      setState({ clicked: false, menuName: "MENU" });
     });
   }, [history]);
 
   useEffect(() => {
-    if (state.menuName === "Menu") {
+    if (state.menuName === "MENU") {
       document.body.classList.remove("hide-scrolling");
     }
   }, [state.menuName]);
@@ -44,19 +44,19 @@ const Header = ({ history }) => {
       setState({
         initial: null,
         clicked: true,
-        menuName: "Close",
+        menuName: "ClOSE",
       });
       document.body.classList.add("hide-scrolling");
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: "Menu",
+        menuName: "MENU",
       });
       document.body.classList.remove("hide-scrolling");
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: "Close",
+        menuName: "CLOSE",
       });
       document.body.classList.add("hide-scrolling");
     }

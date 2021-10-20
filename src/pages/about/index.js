@@ -82,7 +82,7 @@ export default function About() {
     });
   }, []);
   return (
-    <>
+    <div className="page">
       <section className="aboutPage">
         <div className="parallax">
           <div className="text">
@@ -144,6 +144,6 @@ export default function About() {
         </div>
       </section>
       <Footer />
-    </>
+    </div>
   );
 }

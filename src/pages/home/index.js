@@ -108,7 +108,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="page">
       <section className="homePage">
         <div className="first panel">
           <video autoplay="autoplay" muted loop>
@@ -214,8 +214,17 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div class="reachout_outer">
+          <Link to="/discover" class="reach_out btn">
+            Discover
+            <span class="btnarw">
+              <span></span>
+            </span>
+          </Link>
+        </div>
       </section>
       <Footer />
-    </>
+    </div>
   );
 }

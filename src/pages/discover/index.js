@@ -40,7 +40,7 @@ export default function Discover() {
   }, []);
 
   return (
-    <>
+    <div className="page">
       <div className="discoverPage">
         <div className="container">
           <div className="disover-first">
@@ -120,6 +120,6 @@ export default function Discover() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }

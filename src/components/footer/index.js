@@ -44,7 +44,9 @@ export default function Footer() {
         <div className="bottom">
           <div className="bottom-container">
             <div className="contact-head">
-              <h1>Reach Out To Us</h1>
+              <h1>
+                Reach Out <span>To Us</span>
+              </h1>
             </div>
 
             <div className="contact-body">
@@ -53,15 +55,18 @@ export default function Footer() {
                   <h2>telephone:</h2> <br />
                 </div>
                 <div className="contact-num-body">
-                  <h3>081-xxx-xxx</h3> <br />
+                  <h3>081-6835-0106</h3> <br />
                 </div>
               </div>
               <div ref={(el) => (add = el)} className="contact-add">
                 <div className="contact-add-head">
-                  <h2>address:</h2> <br />
+                  <h2>email address:</h2> <br />
                 </div>
                 <div className="contact-add-body">
-                  <h3>xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx</h3>
+                  <h3>
+                    adekanyeadegoke96@gmail.com <br />
+                    XXX-XXX-XXX-XXX-XXX-XXX
+                  </h3>
                   <br />
                 </div>
               </div>
