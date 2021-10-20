@@ -31,18 +31,18 @@ export default function Home() {
     titleReveal(title);
   }, []);
 
-  // useEffect(() => {
-  //   gsap.utils.toArray(".panel").forEach((section) => {
-  //     ScrollTrigger.create({
-  //       trigger: section,
-  //       start: "top top",
-  //       pin: true,
-  //       scrub: 1,
-  //       pinSpacing: false,
-  //       // pinType: "fixed",
-  //     });
-  //   });
-  // }, []);
+  useEffect(() => {
+    gsap.utils.toArray(".panel").forEach((section) => {
+      ScrollTrigger.create({
+        trigger: section,
+        start: "bottom center",
+        pin: true,
+        scrub: 1,
+        pinSpacing: false,
+        // pinType: "fixed",
+      });
+    });
+  }, []);
 
   useEffect(() => {
     gsap
@@ -52,13 +52,13 @@ export default function Home() {
           start: "center bottom",
         },
       })
-      .from(".left-pane .div h1", {
+      .from(".left-pane1 .div h1", {
         opacity: 0,
         duration: 1,
         x: -20,
         ease: "Power4.easeInOut",
       })
-      .from(".left-pane .div p", {
+      .from(".left-pane1 .div p", {
         opacity: 0,
         duration: 1,
         y: 30,
@@ -136,7 +136,7 @@ export default function Home() {
                 to="/discover"
                 class="readmore"
               >
-                Click For More
+                Explore our work
               </Link>
             </div>
           </div>
@@ -157,12 +157,32 @@ export default function Home() {
         <div className="container">
           <div className="wrapper">
             <div className="third panel">
-              <Link to="/" className="left-pane">
-                <div className="div">
-                  <h1>Get Involved</h1>
-                  <p>Ready to take the next step to grow your brand?</p>
+              <div className="left-pane">
+                <Link to="/" className="left-pane1">
+                  <div className="div">
+                    <h1>Get Involved</h1>
+                    <p>Ready to take the next step to grow your brand?</p>
+                  </div>
+                </Link>
+
+                <div className="left-pane2">
+                  <div className="caption">
+                    <h1>
+                      We've helped some of the most influential Fashion &
+                      Lifestyle brands achieve <span>hyper growth</span>.
+                    </h1>
+
+                    <Link
+                      ref={(el) => (readmore = el)}
+                      to="/discover"
+                      class="readmore"
+                    >
+                      Explore our work
+                    </Link>
+                  </div>
                 </div>
-              </Link>
+              </div>
+
               <div className="right-pane">
                 <div className="stack stack-div1">
                   <h1>Branding</h1>

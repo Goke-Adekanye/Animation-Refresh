@@ -382,6 +382,7 @@ header {
     height: 100vh;
     padding: 4rem 8rem 0;
     color: $txt-white;
+    background: $bg-black;
     
   
     @media (max-width: 840px) {
@@ -445,10 +446,19 @@ header {
       display: block;
     }
     .left-pane {
+      width: 60%;
+      height: 140vh;
       margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 1234px) {
+        width: 100%;
+        margin-right: 0;
+      }
+
+    .left-pane1 {
       position: relative;
       height: 100vh;
-      width: 60%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -457,12 +467,7 @@ header {
       background: url('./images/tree.jpg') center center;
       background-repeat: no-repeat;
       background-size: cover;
-      transition: background-color 1s;
-       @media (max-width: 1234px) {
-        width: 100%;
-        margin-right: 0;
-      }
-   
+      transition: background-color 1s;   
       &:hover {
         background-color: rgba(0,0,0,.5);
 
@@ -498,12 +503,60 @@ header {
       }
     }
     }
-    .left-pane:before {
+    .left-pane1:before {
       position: absolute;
       top: 0; right: 0; bottom: 0; left: 0;
       background-color: inherit;
       content: ' ';
     }
+
+    .left-pane2 {
+      position: relative;
+      height: 40vh;
+      display: block;
+      color: $txt-white;
+      padding: 1rem;
+      .caption {
+        width: 100%;
+        height: 40vh;
+        max-width: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h1 {
+          margin-bottom: 20px;
+          font-weight: 300;
+          font-family: 'Martel', serif;
+          letter-spacing: 0;
+          font-size: 20px;
+          line-height: 135%;
+          @media (min-width: 480px) {
+          font-size: 25px;
+          line-height: 140%;
+          }
+          span {
+            color: #B5D60D;
+          }
+        }
+        .readmore {
+          display: inline-block;
+          margin-top: 10px;
+          color: $txt-white;
+          border-bottom: 2px solid $txt-white;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding-bottom: 3px;
+          font-weight: bold;
+          transition: all .4s ease-in-out;
+          &:hover {
+            color: #B5D60D;
+            border-bottom: 2px solid #B5D60D;
+          }
+        }
+    }
+    }
+  }
     .right-pane {
       height: 140vh;
       width: 40%;
