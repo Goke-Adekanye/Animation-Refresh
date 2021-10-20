@@ -83,6 +83,19 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    gsap.from(".left-pane2 .caption", {
+      duration: 2,
+      opacity: 0,
+      x: -30,
+      ease: "Expo.easeInOut",
+      scrollTrigger: {
+        trigger: ".left-pane2",
+        start: "center bottom",
+      },
+    });
+  }, []);
+
+  useEffect(() => {
     gsap
       .timeline({
         scrollTrigger: {
@@ -168,8 +181,8 @@ export default function Home() {
                 <div className="left-pane2">
                   <div className="caption">
                     <h1>
-                      We've helped some of the most influential Fashion &
-                      Lifestyle brands achieve <span>hyper growth</span>.
+                      The <span>digital agency</span> to grow your business into
+                      a global brand.
                     </h1>
 
                     <Link
@@ -177,7 +190,7 @@ export default function Home() {
                       to="/discover"
                       class="readmore"
                     >
-                      Explore our work
+                      Explore-more
                     </Link>
                   </div>
                 </div>
