@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 import "./App.scss";
 import Header from "./components/navbar/Header";
+import CustomCursor from "./components/CustomCursor";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Suspense } from "react";
 import Loader from "./components/loader";
@@ -12,6 +13,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <CustomCursor />
         <Header />
 
         <Suspense fallback={<Loader />}>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,35 +8,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
   // Create varibles of our dom nodes
-  let num = useRef(null);
-  let add = useRef(null);
-  let link = useRef(null);
-
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".bottom",
-          start: "center bottom",
-        },
-      })
-      .from(".contact-head", {
-        duration: 1,
-        opacity: 0,
-        x: -20,
-        ease: "Expo.easeInOut",
-      })
-      .from([num, add, link], {
-        duration: 1,
-        delay: 0.2,
-        opacity: 0,
-        y: 20,
-        ease: "Expo.easeInOut",
-        stagger: {
-          amount: 0.8,
-        },
-      });
-  }, []);
+  // let num = useRef(null);
+  // let add = useRef(null);
+  // let link = useRef(null);
 
   return (
     <footer>
@@ -50,7 +24,7 @@ export default function Footer() {
             </div>
 
             <div className="contact-body">
-              <div ref={(el) => (num = el)} className="contact-num">
+              <div className="contact-num">
                 <div className="contact-num-head">
                   <h2>telephone:</h2> <br />
                 </div>
@@ -58,7 +32,7 @@ export default function Footer() {
                   <h3>081-6835-0106</h3> <br />
                 </div>
               </div>
-              <div ref={(el) => (add = el)} className="contact-add">
+              <div className="contact-add">
                 <div className="contact-add-head">
                   <h2>email address:</h2> <br />
                 </div>
@@ -71,7 +45,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div ref={(el) => (link = el)} className="links">
+              <div className="links">
                 <div className="links-head">
                   <h2>need help?</h2> <br />
                 </div>
