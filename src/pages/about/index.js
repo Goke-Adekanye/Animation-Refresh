@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Redcap from "../../images/about-redcap.jpg";
 import lingerie from "../../images/abt-lingerie.jpg";
 import Footer from "../../components/footer";
+import useLocoScroll from "../../hooks/useLocoScroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,12 +23,15 @@ export default function About() {
     window.scrollTo(0, 0);
   }, []);
 
+  useLocoScroll();
+
   useEffect(() => {
     gsap
       .timeline({
         scrollTrigger: {
           trigger: ".second",
           start: "top center",
+          scroller: ".page",
         },
       })
       .from([node1, node2, node3, node4, node5], {
@@ -54,6 +58,7 @@ export default function About() {
         scrollTrigger: {
           trigger: "h2.sec",
           start: "center bottom",
+          scroller: ".page",
         },
       })
       .from([node6, node7, node8, node9], {
@@ -76,11 +81,40 @@ export default function About() {
       scrollTrigger: {
         trigger: ".parallax",
         start: "top top",
+        scroller: ".page",
         end: "bottom top",
         scrub: true,
       },
     });
   }, []);
+
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".bottom",
+          start: "center bottom",
+          scroller: ".page",
+        },
+      })
+      .from(".contact-head", {
+        duration: 1,
+        opacity: 0,
+        x: -20,
+        ease: "Expo.easeInOut",
+      })
+      .from([".contact-num", ".contact-add", ".links"], {
+        duration: 1,
+        delay: 0.2,
+        opacity: 0,
+        y: 20,
+        ease: "Expo.easeInOut",
+        stagger: {
+          amount: 0.8,
+        },
+      });
+  }, []);
+
   return (
     <div className="page">
       <section className="aboutPage">
