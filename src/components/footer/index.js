@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,6 +11,36 @@ export default function Footer() {
   // let num = useRef(null);
   // let add = useRef(null);
   // let link = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".bottom",
+            start: "center bottom",
+            scroller: ".page",
+          },
+        })
+        .from(".contact-head", {
+          duration: 1,
+          opacity: 0,
+          x: -20,
+          ease: "Expo.easeInOut",
+        })
+        .from([".contact-num", ".contact-add", ".links"], {
+          duration: 1,
+          delay: 0.2,
+          opacity: 0,
+          y: 20,
+          ease: "Expo.easeInOut",
+          stagger: {
+            amount: 0.8,
+          },
+        });
+    });
+    ScrollTrigger.refresh();
+  }, []);
 
   return (
     <footer>

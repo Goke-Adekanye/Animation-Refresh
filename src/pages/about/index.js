@@ -5,6 +5,7 @@ import Redcap from "../../images/about-redcap.jpg";
 import lingerie from "../../images/abt-lingerie.jpg";
 import Footer from "../../components/footer";
 import useLocoScroll from "../../hooks/useLocoScroll";
+import "locomotive-scroll/src/locomotive-scroll.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -88,96 +89,71 @@ export default function About() {
     });
   }, []);
 
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".bottom",
-          start: "center bottom",
-          scroller: ".page",
-        },
-      })
-      .from(".contact-head", {
-        duration: 1,
-        opacity: 0,
-        x: -20,
-        ease: "Expo.easeInOut",
-      })
-      .from([".contact-num", ".contact-add", ".links"], {
-        duration: 1,
-        delay: 0.2,
-        opacity: 0,
-        y: 20,
-        ease: "Expo.easeInOut",
-        stagger: {
-          amount: 0.8,
-        },
-      });
-  }, []);
-
   return (
-    <div className="page">
-      <section className="aboutPage">
-        <div className="parallax">
-          <div className="text">
-            <h1>
-              HALI<span>MA.</span>
-            </h1>
-            <p>strategy, design & development</p>
+    <>
+      <div className="page">
+        <section className="aboutPage">
+          <div className="parallax">
+            <div className="text">
+              <h1>
+                HALI<span>MA.</span>
+              </h1>
+              <p>strategy, design & development</p>
+            </div>
           </div>
-        </div>
 
-        <div className="second">
-          <div className="container">
-            <div className="wrapper">
-              <div className="text-desc">
-                <h2>
-                  <span ref={(el) => (node1 = el)}>
-                    HALIMA. is a full-service creative studio{" "}
-                  </span>
-                  <span ref={(el) => (node2 = el)}>
-                    working with fashion, tech & lifestyle brands.{" "}
-                  </span>
-                  <span ref={(el) => (node3 = el)}>
-                    We collaborate closely with our clients{" "}
-                  </span>
-                  <span ref={(el) => (node4 = el)}>
-                    to tell their stories, engaging audiences{" "}
-                  </span>
-                  <span ref={(el) => (node5 = el)}>
-                    by building beautiful experiences & products.
-                  </span>
-                </h2>
+          <div className="second">
+            <div className="container">
+              <div className="wrapper">
+                <div className="text-desc">
+                  <h2>
+                    <span ref={(el) => (node1 = el)}>
+                      HALIMA. is a full-service creative studio{" "}
+                    </span>
+                    <span ref={(el) => (node2 = el)}>
+                      working with fashion, tech & lifestyle brands.{" "}
+                    </span>
+                    <span ref={(el) => (node3 = el)}>
+                      We collaborate closely with our clients{" "}
+                    </span>
+                    <span ref={(el) => (node4 = el)}>
+                      to tell their stories, engaging audiences{" "}
+                    </span>
+                    <span ref={(el) => (node5 = el)}>
+                      by building beautiful experiences & products.
+                    </span>
+                  </h2>
 
-                <div className="about-imgs">
-                  <div className="img1">
-                    <img src={lingerie} alt="abt" />
+                  <div className="about-imgs">
+                    <div className="img1">
+                      <img src={lingerie} alt="abt" />
+                    </div>
+                    <div className="img2">
+                      <img src={Redcap} alt="abt" />
+                    </div>
                   </div>
-                  <div className="img2">
-                    <img src={Redcap} alt="abt" />
-                  </div>
+
+                  <h2 className="sec">
+                    <span ref={(el) => (node6 = el)}>
+                      We strongly believe every brand and project{" "}
+                    </span>
+                    <span ref={(el) => (node7 = el)}>
+                      is unique and should be tailor-made from{" "}
+                    </span>
+                    <span ref={(el) => (node8 = el)}>
+                      industry leaders to early stage companies.{" "}
+                    </span>
+                    <span ref={(el) => (node9 = el)}>
+                      We don’t do one size fits all.
+                    </span>
+                  </h2>
                 </div>
-
-                <h2 className="sec">
-                  <span ref={(el) => (node6 = el)}>
-                    We strongly believe every brand and project{" "}
-                  </span>
-                  <span ref={(el) => (node7 = el)}>
-                    is unique and should be tailor-made from{" "}
-                  </span>
-                  <span ref={(el) => (node8 = el)}>
-                    industry leaders to early stage companies.{" "}
-                  </span>
-                  <span ref={(el) => (node9 = el)}>
-                    We don’t do one size fits all.
-                  </span>
-                </h2>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <Footer />
-    </div>
+        </section>
+        <Footer />
+      </div>
+    </>
   );
 }

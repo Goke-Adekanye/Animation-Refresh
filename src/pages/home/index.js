@@ -7,6 +7,7 @@ import Glitch from "../../components/glitch";
 import Footer from "../../components/footer";
 import { textReveal, titleReveal } from "./Animations";
 import useLocoScroll from "../../hooks/useLocoScroll";
+import "locomotive-scroll/src/locomotive-scroll.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -119,33 +120,6 @@ export default function Home() {
         ease: "Expo.easeInOut",
         stagger: {
           amount: 1,
-        },
-      });
-  }, []);
-
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".bottom",
-          start: "center bottom",
-          scroller: ".page",
-        },
-      })
-      .from(".contact-head", {
-        duration: 1,
-        opacity: 0,
-        x: -20,
-        ease: "Expo.easeInOut",
-      })
-      .from([".contact-num", ".contact-add", ".links"], {
-        duration: 1,
-        delay: 0.2,
-        opacity: 0,
-        y: 20,
-        ease: "Expo.easeInOut",
-        stagger: {
-          amount: 0.8,
         },
       });
   }, []);
