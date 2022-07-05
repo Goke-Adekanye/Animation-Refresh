@@ -139,7 +139,8 @@ export default function useLocoScroll() {
     const lsUpdate = () => {
       if (locoScroll) {
         // setTimeout(() => {
-        // }, 500);
+        //   locoScroll.update();
+        // }, 1000);
 
         imagesLoaded(scrollEl, { background: true }, function () {
           locoScroll.update();
